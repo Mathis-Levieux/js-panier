@@ -66,6 +66,7 @@ h2 {
 
     aside {
         position: static;
+        border: none;
     }
     .contenu {
       margin: 0 auto;
