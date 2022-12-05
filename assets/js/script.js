@@ -25,6 +25,5 @@ function hideBall(){
     let test = document.querySelectorAll('[data-category="ball"]')
     test.forEach(element => {
         element.style.display='none'
-    })
-    
+    })   
 }
