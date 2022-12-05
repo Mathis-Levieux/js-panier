@@ -1,0 +1,73 @@
+* {
+    font-family: sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+nav {
+    background-color: #0C3153;
+    font-size: 1.2em;
+    display: flex;
+    height: 4em;
+    align-items: center;
+}
+nav i {
+    width: fit-content;
+    cursor: pointer;
+}
+nav img {
+    height: 3em;
+    margin: auto 2em;
+}
+aside {
+    border-right:  2px solid #0C3153;
+    position: fixed;
+    top: 15%
+}
+h2 {
+    margin-left: 6%;
+}
+.contenu {
+    margin-left: 18%;
+    margin-top: 8%;
+}
+.maillot {
+    margin: auto;
+}
+.maillot img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px;
+    margin-bottom: 2em;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 1em auto;
+    box-shadow: 2px 2px 5px #0C3153;
+    border-radius: 10px 10px;
+    text-align: center;
+}
+.item button{
+    border-radius: 0 0 10px 10px;
+    border: none;
+}
+.item button:hover {
+    background-color: #0C3153;
+    color: white;
+    transition: 0.3s;
+    width: 100%;
+}
+
+@media (max-width:1024px){
+
+    aside {
+        position: static;
+    }
+    .contenu {
+      margin: 0 auto;
+    }
+}

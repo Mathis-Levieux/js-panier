@@ -13,13 +13,119 @@
 </head>
 
 <body>
-<p class="text-warning">aaaa</p>
 
+    <nav class="navbar-dark fixed-top mx-0">
+        <img src="assets/img/drapeau.png" alt="">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Maillots</a>
+            <a class="navbar-brand" href="#">Ballons</a>
+            <a class="navbar-brand" href="#">Goodies</a>
+        </div>
+        <div>
+            <i class="bi bi-cart text-white mx-5" id="myInput"></i>
+        </div>
+    </nav>
+
+    <div class="row mx-0">
+        <aside class="mx-0 col-lg-2">
+            <fieldset class="my-5">
+                <legend>Maillot</legend>
+
+                <div>
+                    <input type="checkbox" id="scales" name="scales">
+                    <label for="scales">T-shirt</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="horns" name="horns">
+                    <label for="horns">Short</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="maillot" name="maillot">
+                    <label for="maillot">Chaussettes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="maillot" name="maillot">
+                    <label for="maillot">Ensemble enfant</label>
+                </div>
+
+            </fieldset>
+            <fieldset class="my-5">
+                <legend>Accessoires</legend>
+
+                <div>
+                    <input type="checkbox" id="taille" name="taille" >
+                    <label for="taille">Casquette</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="taille" name="taille">
+                    <label for="taille">Echarpe</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="taille" name="taille">
+                    <label for="taille">Bonnet</label>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Goodies</legend>
+
+                <div>
+                    <input type="checkbox" id="goodies" name="goodies">
+                    <label for="goodies">Porte-clef</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="goodies" name="goodies">
+                    <label for="goodies">Trousse</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="goodies" name="goodies">
+                    <label for="goodies">Perruque</label>
+                </div>
+
+            </fieldset>
+        </aside>
+        <div class="contenu col-lg-10">
+            <h2>Nouveauté</h2>
+
+            <div class="row maillot mx-0 justify-content-center">
+                
+                <!-- <div class="item col-lg-2">
+        <img src="" alt="">
+        <p class="description">Maillot Equipe de France</p>
+        <p class="price">60€</p>
+        <button>Ajouter au panier</button>
+    </div> -->
+
+            </div>
+            <div id="myModal" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Votre panier</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
     <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
