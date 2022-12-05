@@ -1,25 +1,29 @@
 {
-    "results": [
+    "items": [
         {
             "id": 399566,
-            "item_name": "Godzilla vs. Kong",
-            "description": "À une époque où les monstres parcourent la Terre, et alors que l’humanité lutte pour son avenir, Godzilla et King Kong, les deux forces les plus puissantes de la nature, entrent en collision dans une bataille spectaculaire inédite. Alors que Monarch se lance dans une mission périlleuse en terrain inconnu, et qu’il découvre des indices sur les origines des Titans, un complot humain menace d’éradiquer ces créatures – qu’elles soient bonnes ou mauvaises – de la surface de la planète.",
-            "image_path": "https://image.tmdb.org/t/p/original/4bTShLVFnVKK31cowgjdAIZV84T.jpg",
-            "price": 8.3
+            "item_name": "Ballon Adidas Al Rhila Pro",
+            "description": "Official World Cup 2022 Ball\n70% polyurethane, 20% recycled polyester, 10% viscose cover\nRubber bladder\nThermally bonded seamless construction\nFIFA Quality Pro certified\nFIFA World Cup & printed logo",
+            "image_path": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FH57783_1_HARDWARE_Photography_FrontCenterView_white.jpg%3Fv%3D1665072357&w=640&q=85",
+            "price": 145.00,
+            "category": "ball"
         },
         {
             "id": 615678,
-            "item_name": "Thunder Force",
-            "description": "Après l'invention d'une formule donnant des super-pouvoirs aux gens ordinaires, deux amies d'enfance devenues d'improbables super-héroïnes s'allient pour braver le crime.",
-            "image_path": "https://image.tmdb.org/t/p/original/279yOM4OQREL36B3SECnRxoB4MZ.jpg",
-            "price": 5.8
+            "item_name": "Maillot Domicile Argentine Adidas - Homme",
+            "description": "Official World Cup 2022 Jersey\n100% recycled polyester interlock\nMoisture-absorbing AEROREADY\nDroptail hem\nSlim fit",
+            "image_path": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FFIFAMZ0005_1.jpg%3Fv%3D1665067307&w=640&q=85",
+            "price": 90.00,
+            "category": "shirt",
+            "nation": "argentine"
         },
         {
             "id": 460465,
             "item_name": "Mortal Kombat",
             "description": "Une nouvelle variation de l'univers de la saga vidéoludique \"Mortal Kombat\".",
             "image_path": "https://image.tmdb.org/t/p/original/8yhtzsbBExY8mUct2GOk4LDDuGH.jpg",
-            "price": 7.3
+            "price": 7.3,
+            "category": "goodie"
         },
         {
             "id": 791373,
@@ -137,3 +141,5 @@
         }
     ]
 }
+
+
