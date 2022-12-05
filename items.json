@@ -6,7 +6,7 @@
             "description": "Ballon France Action T.5, coloris Blanc et Bleu.\nProduit sous licence officielle de la FFF.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/1/710170g_1.jpg",
             "price": 15.90,
-            "category": "ball",
+            "category": "ballon",
             "size": 5
         },
         {
@@ -15,7 +15,7 @@
             "description": "Ballon FFF Rétro T.5, coloris Marron.\nProduit sous licence officielle.\nCuir véritable",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/2/720260h.jpg",
             "price": 44.90,
-            "category": "ball",
+            "category": "ballon",
             "size": 5
         },
         {
@@ -24,7 +24,7 @@
             "description": "Ballon FFF Jersery Navy T.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/2/720470j.jpg",
             "price": 24.90,
-            "category": "ball",
+            "category": "ballon",
             "size": 2
         },
         {
@@ -33,7 +33,7 @@
             "description": "Ballon FFF Jersery Bleu T.5.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/300/7/1/710910d_1.jpg",
             "price": 19.90,
-            "category": "ball",
+            "category": "ballon",
             "size": 5
         },
         {
@@ -42,7 +42,7 @@
             "description": "Ballon Nike Pitch T.5, coloris Rouge.\nBon suivi visuel.\nConservation optimale de la forme et de la pression.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/2/720420j_2_2.jpg",
             "price": 20.00,
-            "category": "ball",
+            "category": "ballon",
             "size": 5
         },
         {
@@ -51,7 +51,7 @@
             "description": "Ballon FFF Victoire T.5.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/1/710010c_1.jpg",
             "price": 17.90,
-            "category": "ball",
+            "category": "ballon",
             "size": 5
         },
         {
@@ -228,7 +228,7 @@
             "description": "Echarpe France Jacquard, coloris Bleu.\nTissu doux.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/853580g.jpg",
             "price": 14.90,
-            "category": "scarf"
+            "category": "écharpe"
         },
         {
             "id": 500002,
@@ -236,7 +236,7 @@
             "description": "Echarpe France Fiers d'être Bleus, coloris Noir.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850320j.jpg",
             "price": 18.90,
-            "category": "scarf"
+            "category": "écharpe"
         },
         {
             "id": 500003,
@@ -244,7 +244,7 @@
             "description": "Echarpe France, coloris Blanc et Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850330j.jpg",
             "price": 16.90,
-            "category": "scarf"
+            "category": "écharpe"
         },
         {
             "id": 500004,
@@ -252,7 +252,7 @@
             "description": "Echarpe France, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850340j.jpg",
             "price": 18.90,
-            "category": "scarf"
+            "category": "écharpe"
         },
         {
             "id": 500005,
@@ -260,7 +260,7 @@
             "description": "Echarpe Equipe de France, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850360j.jpg",
             "price": 16.90,
-            "category": "scarf"
+            "category": "écharpe"
         },
         {
             "id": 500006,
@@ -268,7 +268,7 @@
             "description": "Echarpe France Stripes, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850370j.jpg",
             "price": 14.90,
-            "category": "scarf"
+            "category": "écharpe"
         },
         {
             "id": 500007,
@@ -276,7 +276,7 @@
             "description": "Echarpe France Joueurs Sublimation, coloris Bleu, Blanc et Rouge.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850380j.jpg",
             "price": 16.90,
-            "category": "scarf"
+            "category": "écharpe"
         },
         {
             "id": 600001,
@@ -284,7 +284,7 @@
             "description": "Casquette France Logo, coloris Bleu.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670070j.jpg",
             "price": 16.90,
-            "category": "hat"
+            "category": "casquette"
         },
         {
             "id": 600002,
@@ -292,7 +292,7 @@
             "description": "Casquette France Graphic, coloris Bleu et Blanc.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670090j.jpg",
             "price": 18.90,
-            "category": "hat"
+            "category": "casquette"
         },
         {
             "id": 600003,
@@ -300,7 +300,7 @@
             "description": "Casquette France Logo, coloris Bleu, Junior.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670081j.jpg",
             "price": 14.90,
-            "category": "hat"
+            "category": "casquette"
         },
         {
             "id": 600004,
@@ -308,7 +308,7 @@
             "description": "Casquette France Logo, coloris Blanc.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670080j.jpg",
             "price": 16.90,
-            "category": "hat"
+            "category": "casquette"
         },
         {
             "id": 600005,
@@ -316,7 +316,7 @@
             "description": "Bonnet France Logo, coloris Bleu et Blanc.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670100j.jpg",
             "price": 14.90,
-            "category": "hat"
+            "category": "bonnet"
         },
         {
             "id": 600009,
@@ -324,7 +324,7 @@
             "description": "Bonnet France Pompon, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
             "price": 18.90,
-            "category": "hat"
+            "category": "bonnet"
         },
         {
             "id": 600010,
@@ -332,7 +332,7 @@
             "description": "Bonnet France Pompon, coloris Bleu.\nProduit sous licence officielle.\nTissu doux.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
             "price": 14.90,
-            "category": "hat"
+            "category": "bonnet"
         },
         {
             "id": 600011,
@@ -340,7 +340,7 @@
             "description": "Bonnet France Logo, coloris Bleu, Junior.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670101j.jpg",
             "price": 14.90,
-            "category": "hat"
+            "category": "bonnet"
         },
         {
             "id": 700001,
@@ -348,7 +348,7 @@
             "description": "Gants Supporter France Logo, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/7/770000j.jpg",
             "price": 14.90,
-            "category": "gloves"
+            "category": "gants"
         },
         {
             "id": 700002,
@@ -356,7 +356,7 @@
             "description": "Gants Supporters France Fan Logo, coloris Bleu.\nProduit sous licence officielle.\nTissu doux.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/7/770090h.jpg",
             "price": 12.90,
-            "category": "gloves"
+            "category": "gants"
         },
         {
             "id": 800001,
@@ -364,7 +364,7 @@
             "description": "Chaussettes Nike France Domicile 2022/2023, coloris Rouge.\nAmorti ciblé.\nTissu respirant.\nAbsorption des chocs maximisée.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/3/330500j_5.jpg",
             "price": 18.00,
-            "category": "socks"
+            "category": "chaussettes"
         },
         {
             "id": 800002,
@@ -372,23 +372,23 @@
             "description": "Chaussettes Nike France Domicile 2022/2023, coloris Blanc.\nAmorti ciblé.\nTissu respirant.\nAbsorption des chocs maximisée.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/3/330510j.jpg",
             "price": 18.00,
-            "category": "socks"
+            "category": "chaussettes"
         },
         {
             "id": 800003,
-            "item_name": "Paire de chaussettes Happy Socks France",
-            "description": "Paire de chaussettes Happy Socks France, coloris Blanc.\nConfortable.",
+            "item_name": "Paire de chaussettes Happy chaussettes France",
+            "description": "Paire de chaussettes Happy chaussettes France, coloris Blanc.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650680f.jpg",
             "price": 9.60,
-            "category": "socks"
+            "category": "chaussettes"
         },
         {
             "id": 800004,
-            "item_name": "Paire de chaussettes Happy Socks France Bleu",
-            "description": "Paire de chaussettes Happy Socks France, coloris Bleu.\nConfortable.",
+            "item_name": "Paire de chaussettes Happy chaussettes France Bleu",
+            "description": "Paire de chaussettes Happy chaussettes France, coloris Bleu.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650710f.jpg",
             "price": 9.60,
-            "category": "socks"
+            "category": "chaussettes"
         }
     ]
 }
