@@ -122,7 +122,7 @@
             "id": 200009,
             "item_name": "Maillot Manches Longues France Gardien 2022/2023 Jaune",
             "description": "Maillot Manches Longues Nike France Gardien 2022/2023, coloris Jaune.\nTissu respirant.\nConfortable.\nMouvements naturels.",
-            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/2/4/240351j.jpg",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311670j.jpg",
             "price": 100.00,
             "category": "maillot"
         },
@@ -178,7 +178,7 @@
             "id": 300007,
             "item_name": "Short France Woven Bleu/Rouge",
             "description": "Short Nike France Woven, coloris Bleu et Rouge.\nRangements sécurisés.\nAjustement idéal.\nConfortable.",
-            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320010j.jpg",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320130g.jpg",
             "price": 35.00,
             "category": "short"
         },
@@ -243,16 +243,152 @@
             "item_name": "Echarpe France Blanc/Bleu",
             "description": "Echarpe France, coloris Blanc et Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850330j.jpg",
-            "price": 18.90,
+            "price": 16.90,
             "category": "scarf"
         },
         {
             "id": 500004,
             "item_name": "Echarpe France Bleu",
-            "description": "Echarpe France, coloris Blanc et Bleu.\nConfortable.\nProduit sous licence officielle.",
-            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850330j.jpg",
+            "description": "Echarpe France, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850340j.jpg",
             "price": 18.90,
             "category": "scarf"
+        },
+        {
+            "id": 500005,
+            "item_name": "Echarpe Equipe de France Bleu",
+            "description": "Echarpe Equipe de France, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850360j.jpg",
+            "price": 16.90,
+            "category": "scarf"
+        },
+        {
+            "id": 500006,
+            "item_name": "Echarpe France Stripes Bleu",
+            "description": "Echarpe France Stripes, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850370j.jpg",
+            "price": 14.90,
+            "category": "scarf"
+        },
+        {
+            "id": 500007,
+            "item_name": "Echarpe France Joueurs Sublimation Bleu/Blanc/Rouge",
+            "description": "Echarpe France Joueurs Sublimation, coloris Bleu, Blanc et Rouge.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850380j.jpg",
+            "price": 16.90,
+            "category": "scarf"
+        },
+        {
+            "id": 600001,
+            "item_name": "Casquette France Logo Bleu",
+            "description": "Casquette France Logo, coloris Bleu.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670070j.jpg",
+            "price": 16.90,
+            "category": "hat"
+        },
+        {
+            "id": 600002,
+            "item_name": "Casquette France Graphic Bleu/Blanc",
+            "description": "Casquette France Graphic, coloris Bleu et Blanc.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670090j.jpg",
+            "price": 18.90,
+            "category": "hat"
+        },
+        {
+            "id": 600003,
+            "item_name": "Casquette France Logo Bleu Junior",
+            "description": "Casquette France Logo, coloris Bleu, Junior.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670081j.jpg",
+            "price": 14.90,
+            "category": "hat"
+        },
+        {
+            "id": 600004,
+            "item_name": "Casquette France Logo Blanc",
+            "description": "Casquette France Logo, coloris Blanc.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670080j.jpg",
+            "price": 16.90,
+            "category": "hat"
+        },
+        {
+            "id": 600005,
+            "item_name": "Bonnet France Logo Bleu/Blanc",
+            "description": "Bonnet France Logo, coloris Bleu et Blanc.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670100j.jpg",
+            "price": 14.90,
+            "category": "hat"
+        },
+        {
+            "id": 600009,
+            "item_name": "Bonnet France Pompon Bleu",
+            "description": "Bonnet France Pompon, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
+            "price": 18.90,
+            "category": "hat"
+        },
+        {
+            "id": 600010,
+            "item_name": "Bonnet FFF Pompon Bleu",
+            "description": "Bonnet France Pompon, coloris Bleu.\nProduit sous licence officielle.\nTissu doux.\nConfortable.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
+            "price": 14.90,
+            "category": "hat"
+        },
+        {
+            "id": 600011,
+            "item_name": "Bonnet France Logo Bleu Junior",
+            "description": "Bonnet France Logo, coloris Bleu, Junior.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670101j.jpg",
+            "price": 14.90,
+            "category": "hat"
+        },
+        {
+            "id": 700001,
+            "item_name": "Gants Supporter France Logo Bleu",
+            "description": "Gants Supporter France Logo, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/7/770000j.jpg",
+            "price": 14.90,
+            "category": "gloves"
+        },
+        {
+            "id": 700002,
+            "item_name": "Gants Supporters France Fan Logo Bleu",
+            "description": "Gants Supporters France Fan Logo, coloris Bleu.\nProduit sous licence officielle.\nTissu doux.\nConfortable.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/7/770090h.jpg",
+            "price": 12.90,
+            "category": "gloves"
+        },
+        {
+            "id": 800001,
+            "item_name": "Chaussettes France Domicile 2022/2023 Rouge",
+            "description": "Chaussettes Nike France Domicile 2022/2023, coloris Rouge.\nAmorti ciblé.\nTissu respirant.\nAbsorption des chocs maximisée.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/3/330500j_5.jpg",
+            "price": 18.00,
+            "category": "socks"
+        },
+        {
+            "id": 800002,
+            "item_name": "Chaussettes France Extérieur 2022/2023 Blanc",
+            "description": "Chaussettes Nike France Domicile 2022/2023, coloris Blanc.\nAmorti ciblé.\nTissu respirant.\nAbsorption des chocs maximisée.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/3/330510j.jpg",
+            "price": 18.00,
+            "category": "socks"
+        },
+        {
+            "id": 800003,
+            "item_name": "Paire de chaussettes Happy Socks France",
+            "description": "Paire de chaussettes Happy Socks France, coloris Blanc.\nConfortable.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650680f.jpg",
+            "price": 9.60,
+            "category": "socks"
+        },
+        {
+            "id": 800004,
+            "item_name": "Paire de chaussettes Happy Socks France Bleu",
+            "description": "Paire de chaussettes Happy Socks France, coloris Bleu.\nConfortable.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650710f.jpg",
+            "price": 9.60,
+            "category": "socks"
         }
         
     ]
