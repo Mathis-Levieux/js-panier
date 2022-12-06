@@ -12,7 +12,7 @@ fetch('items.json')
             <img type="button" src="${element.image_path}" alt="${element.item_name}" data-bs-toggle="modal"
             data-bs-target="#${element.id}">
             <p class="description">${element.item_name}</p>
-            <p class="price">${element.price} €</p>
+            <p class="price">${Number(element.price).toFixed(2)} €</p>
             <button class="btnAdd" data-id= ${element.id}>Ajouter au panier</button>`;
             newDiv.classList.add('item',  'col-lg-2',  'col-5',  'mx-2',  'mx-lg-2','fadein')
             newDiv.dataset.category = element.category
