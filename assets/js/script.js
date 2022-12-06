@@ -14,7 +14,7 @@ fetch('items.json')
             <p class="description">${element.item_name}</p>
             <p class="price">${element.price} €</p>
             <button class="btnAdd" data-id= ${element.id}>Ajouter au panier</button>`;
-            newDiv.classList.add('item',  'col-lg-2',  'col-5',  'mx-2',  'mx-lg-2')
+            newDiv.classList.add('item',  'col-lg-2',  'col-5',  'mx-2',  'mx-lg-2','fadein')
             newDiv.dataset.category = element.category
 
             document.querySelector('.produits').appendChild(newDiv);
@@ -56,6 +56,7 @@ function displayTshirt() {
     test.forEach(element => {
         if (element.dataset.category == 'maillot') {
             element.style.display = 'flex';
+            document.querySelector('#nouveaute').innerText = 'Maillots'
         } else {
             element.style.display = 'none'
         }
@@ -67,26 +68,19 @@ function displayShort() {
     test.forEach(element => {
         if (element.dataset.category == 'short') {
             element.style.display = 'flex';
+            document.querySelector('#nouveaute').innerText = 'Shorts'
         } else {
             element.style.display = 'none'
         }
     })
 }
+
 function displaySocks() {
     let test = document.querySelectorAll('[data-category]')
     test.forEach(element => {
         if (element.dataset.category == 'chaussettes') {
             element.style.display = 'flex';
-        } else {
-            element.style.display = 'none'
-        }
-    })
-}
-function displaySocks() {
-    let test = document.querySelectorAll('[data-category]')
-    test.forEach(element => {
-        if (element.dataset.category == 'chaussettes') {
-            element.style.display = 'flex';
+            document.querySelector('#nouveaute').innerText = 'Chaussettes'
         } else {
             element.style.display = 'none'
         }
@@ -97,6 +91,7 @@ function displayCasquette() {
     test.forEach(element => {
         if (element.dataset.category == 'casquette') {
             element.style.display = 'flex';
+            document.querySelector('#nouveaute').innerText = 'Casquettes'
         } else {
             element.style.display = 'none'
         }
@@ -107,6 +102,7 @@ function displayEcharpe() {
     test.forEach(element => {
         if (element.dataset.category == 'echarpe') {
             element.style.display = 'flex';
+            document.querySelector('#nouveaute').innerText = 'Echarpes'
         } else {
             element.style.display = 'none'
         }
@@ -117,6 +113,7 @@ function displayBonnet() {
     test.forEach(element => {
         if (element.dataset.category == 'bonnet') {
             element.style.display = 'flex';
+            document.querySelector('#nouveaute').innerText = 'Bonnets'
         } else {
             element.style.display = 'none'
         }
@@ -127,6 +124,7 @@ function displayBall() {
     test.forEach(element => {
         if (element.dataset.category == 'ballon') {
             element.style.display = 'flex';
+            document.querySelector('#nouveaute').innerText = 'Ballons'
         } else {
             element.style.display = 'none'
         }
@@ -137,6 +135,7 @@ function displayGoodies() {
     test.forEach(element => {
         if (element.dataset.category == 'goodies') {
             element.style.display = 'flex';
+            document.querySelector('#nouveaute').innerText = 'Goodies'
         } else {
             element.style.display = 'none'
         }

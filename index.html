@@ -16,32 +16,65 @@
 <body>
 
     <nav class="navbar-dark fixed-top mx-0">
-        <img src="assets/img/drapeau.png" alt="">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Maillots</a>
-            <a class="navbar-brand" href="#">Ballons</a>
-            <a class="navbar-brand" href="#">Goodies</a>
+        <img id="logo" src="assets/img/logo.png" alt="">
+
+        <div id="panier">
+            <i class="bi bi-cart text-white " id="myInput"></i>
+            <span id="nbPanier">0</span>
         </div>
-        <div>
-            <i class="bi bi-cart text-white mx-5" id="myInput"><span id="nbPanier">0</span></i>
-        </div>
+
     </nav>
     <div class="banniere">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+         
+    
+            </div>
+          </div>
 
-    </div>
+          
+          
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://api.prod.panini.cloud/pub/media/FFF_Merch_Noel_SLIDER_1440x500.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://api.prod.panini.cloud/pub/media/CSBlock/FFF/Slider/FFF-1440-500-slider-WC-2022-03-general_accroche.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://api.prod.panini.cloud/pub/media/FFF-1440-500-slider-OPE-BADGE-FFF-OFFERT.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="hero-link">
+                <a class="hero-link-button text-center" href="#nouveaute"
+                  ><i class="bi bi-chevron-double-down"></i
+                ></a>
+              </div>
+          </div>
+      </div>
+ 
     <div class="row mx-0">
         <aside class="mx-0 col-lg-2">
             <fieldset class="my-5">
-                <legend>Maillot</legend>
+                <legend>Maillots</legend>
 
                 <div>
                     <input type="radio" id="maillot" name="produit" onchange="displayTshirt()">
-                    <label for="maillot">Maillot</label>
+                    <label for="maillot">Maillots</label>
                 </div>
 
                 <div>
                     <input type="radio" id="short" name="produit" onchange="displayShort()">
-                    <label for="short">Short</label>
+                    <label for="short">Shorts</label>
                 </div>
                 <div>
                     <input type="radio" id="chaussettes" name="produit" onchange="displaySocks()">
@@ -55,19 +88,19 @@
 
                 <div>
                     <input type="radio" id="casquette" name="produit" onchange="displayCasquette()">
-                    <label for="casquette">Casquette</label>
+                    <label for="casquette">Casquettes</label>
                 </div>
                 <div>
                     <input type="radio" id="echarpe" name="produit" onchange="displayEcharpe()">
-                    <label for="echarpe">Echarpe</label>
+                    <label for="echarpe">Echarpes</label>
                 </div>
                 <div>
                     <input type="radio" id="bonnet" name="produit" onchange="displayBonnet()">
-                    <label for="bonnet">Bonnet</label>
+                    <label for="bonnet">Bonnets</label>
                 </div>
                 <div>
                     <input type="radio" id="ballon" name="produit" onchange="displayBall()">
-                    <label for="ballon">Ballon</label>
+                    <label for="ballon">Ballons</label>
                 </div>
 
             </fieldset>
@@ -83,7 +116,7 @@
             </fieldset>
         </aside>
         <div class="contenu col-lg-10">
-            <h2>nouveauté</h2>
+            <h2 id="nouveaute" style="padding-top: 145px;">Nouveautés</h2>
 
             <div class="row produits mx-0 justify-content-center">
 
