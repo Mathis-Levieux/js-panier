@@ -223,6 +223,14 @@
             "category": "goodies"
         },
         {
+            "id": "item306",
+            "item_name": "Collection de 35 pins des Maillots de l'équipe France de 1919 à 2020",
+            "description": "Collection de 35 pins des Maillots de l'équipe France de 1919 à 2020\nProduit sous licence officielle.\nRetrouvez les miniatures de l'ensemble des maillots portés par la FFF de 1919 à 2020.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850070h_1.jpg",
+            "price": 139.90,
+            "category": "goodies"
+        },
+        {
             "id": "item401",
             "item_name": "Echarpe France Jacquard Bleu",
             "description": "Echarpe France Jacquard, coloris Bleu.\nTissu doux.\nProduit sous licence officielle.",
@@ -311,6 +319,22 @@
             "category": "casquette"
         },
         {
+            "id": "item505",
+            "item_name": "Casquette France All Over Bleu Junior",
+            "description": "Casquette France All Over, coloris Bleu, Junior.\nProduit sous licence officielle.\nConfortable.\n100 % coton pour 100 % de douceur.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670041j.jpg",
+            "price": 15.12,
+            "category": "casquette"
+        },
+        {
+            "id": "item506",
+            "item_name": "Casquette France Noir",
+            "description": "Casquette France, coloris Noir.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670970g.jpg",
+            "price": 21.52,
+            "category": "casquette"
+        },
+        {
             "id": "item601",
             "item_name": "Bonnet France Logo Bleu/Blanc",
             "description": "Bonnet France Logo, coloris Bleu et Blanc.\nConfortable.\nProduit sous licence officielle.",
@@ -320,7 +344,7 @@
         },
         {
             "id": "item602",
-            "item_name": "Bonnet France Pompon Bleu",
+            "item_name": "Bonnet France Pompon",
             "description": "Bonnet France Pompon, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
             "price": 18.90,
@@ -328,9 +352,9 @@
         },
         {
             "id": "item603",
-            "item_name": "Bonnet FFF Pompon Bleu",
+            "item_name": "Bonnet FFF Pompon",
             "description": "Bonnet France Pompon, coloris Bleu.\nProduit sous licence officielle.\nTissu doux.\nConfortable.",
-            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670830h.jpg",
             "price": 14.90,
             "category": "bonnet"
         },
@@ -339,6 +363,22 @@
             "item_name": "Bonnet France Logo Bleu Junior",
             "description": "Bonnet France Logo, coloris Bleu, Junior.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670101j.jpg",
+            "price": 12.90,
+            "category": "bonnet"
+        },
+        {
+            "id": "item605",
+            "item_name": "Bonnet France Pompon Junior",
+            "description": "Bonnet France Pompon, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
+            "price": 16.90,
+            "category": "bonnet"
+        },
+        {
+            "id": "item606",
+            "item_name": "Bonnet + Echarpe France Fan Bleu",
+            "description": "Bonnet + Echarpe France Fan, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670120j_2_1.jpg",
             "price": 14.90,
             "category": "bonnet"
         },
@@ -387,6 +427,22 @@
             "item_name": "Paire de chaussettes Happy chaussettes France Bleu",
             "description": "Paire de chaussettes Happy chaussettes France, coloris Bleu.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650710f.jpg",
+            "price": 9.60,
+            "category": "chaussettes"
+        },
+        {
+            "id": "item707",
+            "item_name": "Lot de 3 Paires de chaussettes France x Happy Socks Bleu/Blanc/Rouge",
+            "description": "Lot de 3 Paires de chaussettes France x Happy Socks, coloris Bleu, Blanc et Rouge.\nConfortables.\nProduit sous licence officielle.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650850g.jpg",
+            "price": 19.90,
+            "category": "chaussettes"
+        },
+        {
+            "id": "item708",
+            "item_name": "Paire de chaussettes Happy Socks France",
+            "description": "Paire de chaussettes Happy Socks France, coloris Blanc.\nConfortable.",
+            "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650680f.jpg",
             "price": 9.60,
             "category": "chaussettes"
         }
