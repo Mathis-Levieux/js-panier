@@ -13,7 +13,7 @@ fetch('items.json')
             data-bs-target="#${element.id}">
             <p class="description">${element.item_name}</p>
             <p class="price">${element.price} €</p>
-            <button class="btnAdd" data-id= ${element.id}>Ajouter au panier</button>`;
+            <button class="btnAdd py-3" data-id= ${element.id}>Ajouter au panier</button>`;
             newDiv.classList.add('item',  'col-lg-2',  'col-5',  'mx-2',  'mx-lg-2','fadein')
             newDiv.dataset.category = element.category
 

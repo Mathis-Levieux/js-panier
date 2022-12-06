@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -5,14 +7,24 @@
 body {
     overflow-x: hidden;
 }
-
+#titre {
+    color: white;
+    font-family: 'Nerko One', cursive;
+    text-transform: uppercase;
+    margin-left: 30%;
+    
+}
 nav {
+    /* background: rgb(20,6,255);
+    background: linear-gradient(to right, rgba(20,6,255,1) 33%, rgb(255, 255, 255) 33%,rgb(255,255,255) 66%, rgba(255,0,0,1) 33%); */
     background-color: #0C3153;
     font-size: 1.2em;
     display: flex;
     height: 6em;
     align-items: center;
     position: relative;
+    box-shadow: 0 2px 4px 0;
+   
 }
 
 nav i {
@@ -27,6 +39,7 @@ nav img {
 
 #logo {
     justify-content: center;
+    margin-bottom: 0.7em;
 
 }
 
@@ -34,6 +47,9 @@ nav img {
     position: absolute;
     left: 90%;
     color: white;
+}
+#nouveaute {
+    padding-top: 145px;
 }
 
 .banniere {
@@ -46,7 +62,7 @@ aside {
     height: 50%;
     border-right: 2px solid #0C3153;
     margin-top: 12rem !important;
-    position: sticky !important;
+    position: sticky;
     top: 10em;
     padding-right: 0 !important;
     padding-left: 3em !important;
@@ -110,15 +126,22 @@ h2 {
     border-radius: 10px 10px;
     text-align: center;
 }
-
+.item:hover {
+    box-shadow: none;
+    transition: 0.3s;
+    
+}
 .item button {
     border-radius: 0 0 10px 10px;
     border: none;
-    background-color: white;
+    background-color: #0C3153;
+    width: 100%;
+    color: white;
+    
 }
 
 .item button:hover {
-    background-color: #0C3153;
+    text-decoration: underline;
     color: white;
     transition: 0.5s;
     width: 100%;
@@ -189,5 +212,9 @@ h2 {
 
     .hero-link-button {
         display: none;
+    }
+    .btnAdd {
+        background-color: #0C3153 !important;
+        color: white;
     }
 }
