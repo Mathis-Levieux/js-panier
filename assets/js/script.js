@@ -13,7 +13,7 @@ fetch('items.json')
             data-bs-target="#${element.id}">
             <p class="description">${element.item_name}</p>
             <p class="price">${element.price} €</p>
-            <button>Ajouter au panier</button>`;
+            <button class="btnAdd" data-id= ${element.id}>Ajouter au panier</button>`;
             newDiv.classList.add('item',  'col-lg-2',  'col-5',  'mx-2',  'mx-lg-2')
             newDiv.dataset.category = element.category
 
@@ -142,6 +142,10 @@ function displayGoodies() {
         }
     })
 }
+document.querySelectorAll('.btnAdd').forEach(element => {
+    element.addEventListener('click', ()=> {
 
+    })
+})
 
 // CREATION DE MODAL

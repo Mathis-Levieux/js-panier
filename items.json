@@ -1,7 +1,7 @@
 {
     "items": [
         {
-            "id": 100001,
+            "id": "item001",
             "item_name": "Ballon FFF Blanc/Bleu - Taille 5",
             "description": "Ballon France Action T.5, coloris Blanc et Bleu.\nProduit sous licence officielle de la FFF.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/1/710170g_1.jpg",
@@ -10,7 +10,7 @@
             "size": 5
         },
         {
-            "id": 100002,
+            "id": "item002",
             "item_name": "Ballon FFF Rétro Marron - Taille 5",
             "description": "Ballon FFF Rétro T.5, coloris Marron.\nProduit sous licence officielle.\nCuir véritable",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/2/720260h.jpg",
@@ -19,7 +19,7 @@
             "size": 5
         },
         {
-            "id": 100003,
+            "id": "item003",
             "item_name": "Ballon FFF Jersey Navy T - Taille 2",
             "description": "Ballon FFF Jersery Navy T.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/2/720470j.jpg",
@@ -28,7 +28,7 @@
             "size": 2
         },
         {
-            "id": 100004,
+            "id": "item004",
             "item_name": "Ballon FFF Jersey Bleu - Taille 5",
             "description": "Ballon FFF Jersery Bleu T.5.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/300/7/1/710910d_1.jpg",
@@ -37,7 +37,7 @@
             "size": 5
         },
         {
-            "id": 100005,
+            "id": "item005",
             "item_name": "Ballon Nike Rouge - Taille 5",
             "description": "Ballon Nike Pitch T.5, coloris Rouge.\nBon suivi visuel.\nConservation optimale de la forme et de la pression.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/2/720420j_2_2.jpg",
@@ -46,7 +46,7 @@
             "size": 5
         },
         {
-            "id": 100006,
+            "id": "item006",
             "item_name": "Ballon FFF Victoire - Taille 5",
             "description": "Ballon FFF Victoire T.5.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/1/710010c_1.jpg",
@@ -55,7 +55,7 @@
             "size": 5
         },
         {
-            "id": 200001,
+            "id": "item101",
             "item_name": "Maillot Match France Domicile 2022/2023 Bleu",
             "description": "Maillot Match Nike France Domicile 2022/2023, coloris Bleu.\nTissu ultra-respirant.\nConfortable.\nMouvements naturels.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311660j.jpg",
@@ -63,7 +63,7 @@
             "category": "maillot"
         },
         {
-            "id": 200002,
+            "id": "item102",
             "item_name": "Maillot Manches Longues France Domicile 2022/2023 Bleu",
             "description": "Maillot Manches Longues Nike France Domicile 2022/2023, coloris Bleu.\nTissu respirant.\nConfortable.\nMouvements naturels.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311680j.jpg",
@@ -71,7 +71,7 @@
             "category": "maillot"
         },
         {
-            "id": 200003,
+            "id": "item103",
             "item_name": "Maillot France Domicile 2022/2023 Bleu Femme",
             "description": "Maillot Match Nike France Domicile 2022/2023, coloris Bleu.\nTissu ultra-respirant.\nConfortable.\nMouvements naturels.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/310172j.jpg",
@@ -79,7 +79,7 @@
             "category": "maillot"
         },
         {
-            "id": 200004,
+            "id": "item104",
             "item_name": "Maillot Match France Extérieur 2022/2023 Blanc",
             "description": "Maillot Match Nike France Extérieur 2022/2023, coloris Blanc.\nTissu ultra-respirant.\nConfortable.\nMouvements naturels.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311650j.jpg",
@@ -87,7 +87,7 @@
             "category": "maillot"
         },
         {
-            "id": 200005,
+            "id": "item105",
             "item_name": "Maillot France Extérieur 2022/2023 Blanc",
             "description": "Maillot Nike France Extérieur 2022/2023, coloris Blanc.\nCoupe standard pour une tenue décontractée.\nConfortable.\nMouvements naturels.\nTissu respirant.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311630j.jpg",
@@ -95,7 +95,7 @@
             "category": "maillot"
         },
         {
-            "id": 200006,
+            "id": "item106",
             "item_name": "Maillot France Extérieur 2022/2023 Blanc Femme",
             "description": "Maillot Match Nike France Extérieur 2022/2023, coloris Blanc, Femme.\nTissu respirant.\nConfortable.\nMouvements naturels.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/310162j.jpg",
@@ -103,7 +103,7 @@
             "category": "maillot"
         },
         {
-            "id": 200007,
+            "id": "item107",
             "item_name": "Mini Kit France Domicile 2022/2023 Bleu/Blanc/Rouge Junior",
             "description": "Mini Kit Nike France Domicile 2022/2023, coloris Bleu, Blanc et Rouge, Junior.\nMaillot + Short + Chaussettes.\nTissu respirant.\nConfortable.\nMouvements naturels.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/2/4/240361j.jpg",
@@ -111,7 +111,7 @@
             "category": "maillot"
         },
         {
-            "id": 200008,
+            "id": "item108",
             "item_name": "Mini Kit France Extérieur 2022/2023 Blanc/Bleu Junior",
             "description": "Mini Kit Nike France Extérieur 2022/2023, coloris Blanc et Bleu, Junior.\nMaillot + Short + Chaussettes.\nConfortable.\nTissu respirant.\nMouvements naturels.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/2/4/240351j.jpg",
@@ -119,7 +119,7 @@
             "category": "maillot"
         },
         {
-            "id": 200009,
+            "id": "item109",
             "item_name": "Maillot Manches Longues France Gardien 2022/2023 Jaune",
             "description": "Maillot Manches Longues Nike France Gardien 2022/2023, coloris Jaune.\nTissu respirant.\nConfortable.\nMouvements naturels.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311670j.jpg",
@@ -127,7 +127,7 @@
             "category": "maillot"
         },
         {
-            "id": 300001,
+            "id": "item201",
             "item_name": "Short France Domicile 2022/2023 Blanc",
             "description": "Short Nike France Domicile 2022/2023, coloris Blanc.\nTissu respirant.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320800j_2_3.jpg",
@@ -135,7 +135,7 @@
             "category": "short"
         },
         {
-            "id": 300002,
+            "id": "item202",
             "item_name": "Short France Domicile 2022/2023 Blanc Junior",
             "description": "Short Nike France Extérieur 2022/2023, coloris Blanc, Junior.\nTissu respirant.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320461j_1.jpg",
@@ -143,7 +143,7 @@
             "category": "short"
         },
         {
-            "id": 300003,
+            "id": "item203",
             "item_name": "Short France Domicile 2022/2023 Blanc Femme",
             "description": "Short Nike France Domicile 2022/2023, coloris Blanc, Femme.\nTissu respirant.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320052j_short_1.jpg",
@@ -151,7 +151,7 @@
             "category": "short"
         },
         {
-            "id": 300004,
+            "id": "item204",
             "item_name": "Short France Extérieur 2022/2023 Bleu",
             "description": "Short Nike France Extérieur 2022/2023, coloris Bleu.\nTissu respirant.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320790j_6.jpg",
@@ -159,7 +159,7 @@
             "category": "short"
         },
         {
-            "id": 300005,
+            "id": "item205",
             "item_name": "Short Entraînement France Strike Bleu",
             "description": "Short entraînement Nike France Strike, coloris Bleu.\nTissu respirant et aéré.\nRangements sécurisés.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/5/3/530360j_7.jpg",
@@ -167,7 +167,7 @@
             "category": "short"
         },
         {
-            "id": 300006,
+            "id": "item206",
             "item_name": "Short de bain France Fan Bleu",
             "description": "Short de bain France Fan, coloris Bleu.\nProduit sous licence officielle.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320010j.jpg",
@@ -175,7 +175,7 @@
             "category": "short"
         },
         {
-            "id": 300007,
+            "id": "item207",
             "item_name": "Short France Woven Bleu/Rouge",
             "description": "Short Nike France Woven, coloris Bleu et Rouge.\nRangements sécurisés.\nAjustement idéal.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320130g.jpg",
@@ -183,7 +183,7 @@
             "category": "short"
         },
         {
-            "id": 400001,
+            "id": "item301",
             "item_name": "Bandeau Perruque FFF Bleu/Blanc/Rouge",
             "description": "Bandeau Perruque FFF, Bleu, Blanc et Rouge.\nSous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/_/_/__204973_bandeau_perruque.jpg",
@@ -191,7 +191,7 @@
             "category": "goodies"
         },
         {
-            "id": 400002,
+            "id": "item302",
             "item_name": "Trousse France 2 compartiments Bleu",
             "description": "Trousse France 2 compartiments, coloris Bleu.\nProduit sous licence officielle de la FFF.\nRangement sécurisé.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850850j.jpg",
@@ -199,7 +199,7 @@
             "category": "goodies"
         },
         {
-            "id": 400003,
+            "id": "item303",
             "item_name": "Porte-clés FFF Jeton Arc de Triomphe Argenté",
             "description": "Porte-clés FFF Jeton Arc de Triomphe, coloris Argenté.\nProduit sous licence officielle de la FFF.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/853140g.jpg",
@@ -207,7 +207,7 @@
             "category": "goodies"
         },
         {
-            "id": 400004,
+            "id": "item304",
             "item_name": "Porte-clés FFF 2 étoiles Pivot Argenté/Bleu",
             "description": "Affichez votre passion pour les Bleus avec le Porte-clés FFF 2 étoiles Pivot Argenté/Bleu !\nPartie centrale pivotante sur un axe.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/851310e.jpg",
@@ -215,7 +215,7 @@
             "category": "goodies"
         },
         {
-            "id": 400005,
+            "id": "item305",
             "item_name": "Porte-clés FFF Maillot Domicile Pogba Bi-Face Bleu",
             "description": "Porte-clés FFF Maillot Domicile Pogba Bi-Face, coloris Bleu.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850120h_2.jpg",
@@ -223,7 +223,7 @@
             "category": "goodies"
         },
         {
-            "id": 500001,
+            "id": "item401",
             "item_name": "Echarpe France Jacquard Bleu",
             "description": "Echarpe France Jacquard, coloris Bleu.\nTissu doux.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/853580g.jpg",
@@ -231,7 +231,7 @@
             "category": "echarpe"
         },
         {
-            "id": 500002,
+            "id": "item402",
             "item_name": "Echarpe France Fiers d'être Bleus Noir",
             "description": "Echarpe France Fiers d'être Bleus, coloris Noir.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850320j.jpg",
@@ -239,7 +239,7 @@
             "category": "echarpe"
         },
         {
-            "id": 500003,
+            "id": "item403",
             "item_name": "Echarpe France Blanc/Bleu",
             "description": "Echarpe France, coloris Blanc et Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850330j.jpg",
@@ -247,7 +247,7 @@
             "category": "echarpe"
         },
         {
-            "id": 500004,
+            "id": "item404",
             "item_name": "Echarpe France Bleu",
             "description": "Echarpe France, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850340j.jpg",
@@ -255,7 +255,7 @@
             "category": "echarpe"
         },
         {
-            "id": 500005,
+            "id": "item405",
             "item_name": "Echarpe Equipe de France Bleu",
             "description": "Echarpe Equipe de France, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850360j.jpg",
@@ -263,7 +263,7 @@
             "category": "echarpe"
         },
         {
-            "id": 500006,
+            "id": "item406",
             "item_name": "Echarpe France Stripes Bleu",
             "description": "Echarpe France Stripes, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850370j.jpg",
@@ -271,7 +271,7 @@
             "category": "echarpe"
         },
         {
-            "id": 500007,
+            "id": "item407",
             "item_name": "Echarpe France Joueurs Sublimation Bleu/Blanc/Rouge",
             "description": "Echarpe France Joueurs Sublimation, coloris Bleu, Blanc et Rouge.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850380j.jpg",
@@ -279,7 +279,7 @@
             "category": "echarpe"
         },
         {
-            "id": 600001,
+            "id": "item501",
             "item_name": "Casquette France Logo Bleu",
             "description": "Casquette France Logo, coloris Bleu.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670070j.jpg",
@@ -287,7 +287,7 @@
             "category": "casquette"
         },
         {
-            "id": 600002,
+            "id": "item502",
             "item_name": "Casquette France Graphic Bleu/Blanc",
             "description": "Casquette France Graphic, coloris Bleu et Blanc.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670090j.jpg",
@@ -295,7 +295,7 @@
             "category": "casquette"
         },
         {
-            "id": 600003,
+            "id": "item503",
             "item_name": "Casquette France Logo Bleu Junior",
             "description": "Casquette France Logo, coloris Bleu, Junior.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670081j.jpg",
@@ -303,7 +303,7 @@
             "category": "casquette"
         },
         {
-            "id": 600004,
+            "id": "item504",
             "item_name": "Casquette France Logo Blanc",
             "description": "Casquette France Logo, coloris Blanc.\nConfortable.\n100 % coton pour 100 % de douceur.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670080j.jpg",
@@ -311,7 +311,7 @@
             "category": "casquette"
         },
         {
-            "id": 600005,
+            "id": "item601",
             "item_name": "Bonnet France Logo Bleu/Blanc",
             "description": "Bonnet France Logo, coloris Bleu et Blanc.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670100j.jpg",
@@ -319,7 +319,7 @@
             "category": "bonnet"
         },
         {
-            "id": 600009,
+            "id": "item602",
             "item_name": "Bonnet France Pompon Bleu",
             "description": "Bonnet France Pompon, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
@@ -327,7 +327,7 @@
             "category": "bonnet"
         },
         {
-            "id": 600010,
+            "id": "item603",
             "item_name": "Bonnet FFF Pompon Bleu",
             "description": "Bonnet France Pompon, coloris Bleu.\nProduit sous licence officielle.\nTissu doux.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670110j.jpg",
@@ -335,7 +335,7 @@
             "category": "bonnet"
         },
         {
-            "id": 600011,
+            "id": "item604",
             "item_name": "Bonnet France Logo Bleu Junior",
             "description": "Bonnet France Logo, coloris Bleu, Junior.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670101j.jpg",
@@ -343,7 +343,7 @@
             "category": "bonnet"
         },
         {
-            "id": 700001,
+            "id": "item701",
             "item_name": "Gants Supporter France Logo Bleu",
             "description": "Gants Supporter France Logo, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/7/770000j.jpg",
@@ -351,7 +351,7 @@
             "category": "gants"
         },
         {
-            "id": 700002,
+            "id": "item702",
             "item_name": "Gants Supporters France Fan Logo Bleu",
             "description": "Gants Supporters France Fan Logo, coloris Bleu.\nProduit sous licence officielle.\nTissu doux.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/7/7/770090h.jpg",
@@ -359,7 +359,7 @@
             "category": "gants"
         },
         {
-            "id": 800001,
+            "id": "item703",
             "item_name": "Chaussettes France Domicile 2022/2023 Rouge",
             "description": "Chaussettes Nike France Domicile 2022/2023, coloris Rouge.\nAmorti ciblé.\nTissu respirant.\nAbsorption des chocs maximisée.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/3/330500j_5.jpg",
@@ -367,7 +367,7 @@
             "category": "chaussettes"
         },
         {
-            "id": 800002,
+            "id": "item704",
             "item_name": "Chaussettes France Extérieur 2022/2023 Blanc",
             "description": "Chaussettes Nike France Domicile 2022/2023, coloris Blanc.\nAmorti ciblé.\nTissu respirant.\nAbsorption des chocs maximisée.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/3/330510j.jpg",
@@ -375,7 +375,7 @@
             "category": "chaussettes"
         },
         {
-            "id": 800003,
+            "id": "item705",
             "item_name": "Paire de chaussettes Happy chaussettes France",
             "description": "Paire de chaussettes Happy chaussettes France, coloris Blanc.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650680f.jpg",
@@ -383,7 +383,7 @@
             "category": "chaussettes"
         },
         {
-            "id": 800004,
+            "id": "item706",
             "item_name": "Paire de chaussettes Happy chaussettes France Bleu",
             "description": "Paire de chaussettes Happy chaussettes France, coloris Bleu.\nConfortable.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/5/650710f.jpg",
