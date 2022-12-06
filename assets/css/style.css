@@ -19,9 +19,7 @@ nav img {
     height: 3em;
     margin: auto 2em;
 }
-.banniere{
-    
-}
+
 aside {
     border-right:  2px solid #0C3153;
     position: fixed;
@@ -42,6 +40,14 @@ h2 {
     height: auto;
     border-radius: 10px 10px;
     margin-bottom: 2em;
+}
+
+.imgzoom {
+    margin-bottom: 0em!important;
+}
+
+.btn-close {
+    margin-bottom: 0.75rem;
 }
 .item {
     display: flex;
@@ -70,6 +76,10 @@ h2 {
 .description {
     text-align: center;
     margin: 1em;
+}
+
+.modal-content {
+    background-color: #0C3153;
 }
 
 @media (max-width:1024px){

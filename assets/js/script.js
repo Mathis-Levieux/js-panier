@@ -30,7 +30,7 @@ fetch('items.json')
             newModal.classList.add('modal', 'fade')
             newModal.id = element.id
             newModal.innerHTML = `<div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content bg-dark text-light">
+        <div class="modal-content text-light">
             <div class="modal-body">
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                     aria-label="Close"></button>
