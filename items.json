@@ -228,7 +228,7 @@
             "description": "Echarpe France Jacquard, coloris Bleu.\nTissu doux.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/853580g.jpg",
             "price": 14.90,
-            "category": "écharpe"
+            "category": "echarpe"
         },
         {
             "id": 500002,
@@ -236,7 +236,7 @@
             "description": "Echarpe France Fiers d'être Bleus, coloris Noir.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850320j.jpg",
             "price": 18.90,
-            "category": "écharpe"
+            "category": "echarpe"
         },
         {
             "id": 500003,
@@ -244,7 +244,7 @@
             "description": "Echarpe France, coloris Blanc et Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850330j.jpg",
             "price": 16.90,
-            "category": "écharpe"
+            "category": "echarpe"
         },
         {
             "id": 500004,
@@ -252,7 +252,7 @@
             "description": "Echarpe France, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850340j.jpg",
             "price": 18.90,
-            "category": "écharpe"
+            "category": "echarpe"
         },
         {
             "id": 500005,
@@ -260,7 +260,7 @@
             "description": "Echarpe Equipe de France, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850360j.jpg",
             "price": 16.90,
-            "category": "écharpe"
+            "category": "echarpe"
         },
         {
             "id": 500006,
@@ -268,7 +268,7 @@
             "description": "Echarpe France Stripes, coloris Bleu.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850370j.jpg",
             "price": 14.90,
-            "category": "écharpe"
+            "category": "echarpe"
         },
         {
             "id": 500007,
@@ -276,7 +276,7 @@
             "description": "Echarpe France Joueurs Sublimation, coloris Bleu, Blanc et Rouge.\nConfortable.\nProduit sous licence officielle.",
             "image_path": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/8/5/850380j.jpg",
             "price": 16.90,
-            "category": "écharpe"
+            "category": "echarpe"
         },
         {
             "id": 600001,

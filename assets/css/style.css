@@ -31,10 +31,10 @@ h2 {
     margin-left: 18%;
     margin-top: 8%;
 }
-.maillot {
+.produits {
     margin: auto;
 }
-.maillot img {
+.produits img {
     width: 100%;
     height: auto;
     border-radius: 10px 10px;
@@ -58,8 +58,15 @@ h2 {
 .item button:hover {
     background-color: #0C3153;
     color: white;
-    transition: 0.3s;
+    transition: 0.5s;
     width: 100%;
+}
+.price {
+    font-weight: bold;
+}
+.description {
+    text-align: center;
+    margin: 1em;
 }
 
 @media (max-width:1024px){
@@ -67,8 +74,9 @@ h2 {
     aside {
         position: static;
         border: none;
+        margin-top: 100px !important;
     }
     .contenu {
-      margin: 0 auto;
+      margin: 8% auto auto auto;
     }
 }
