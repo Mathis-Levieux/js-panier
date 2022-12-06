@@ -9,8 +9,8 @@ fetch('items.json')
 
             const newDiv = document.createElement('div');
             newDiv.innerHTML = `
-            <img src="${element.image_path}" alt="${element.item_name}" data-bs-toggle="modal"
-            data-bs-target="${element.id}">
+            <img type="button" src="${element.image_path}" alt="${element.item_name}" data-bs-toggle="modal"
+            data-bs-target="#${element.id}">
             <p class="description">${element.item_name}</p>
             <p class="price">${element.price} €</p>
             <button>Ajouter au panier</button>`;
@@ -29,8 +29,7 @@ fetch('items.json')
             newModal.setAttribute('aria-hidden', 'true')
             newModal.classList.add('modal', 'fade')
             newModal.id = element.id
-            newModal.innerHTML = `<div class="modal fade" id="${element.id}" tabindex="-1" aria-labelledby="${element.id}" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+            newModal.innerHTML = `<div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-dark text-light">
             <div class="modal-body">
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
@@ -46,21 +45,9 @@ fetch('items.json')
                 </div>
             </div>
         </div>
-    </div>
-</div>`
+    </div>`
 
-
-
-
-            document.querySelectorAll('img').forEach(element => {
-                element.addEventListener('click', () => {
-                    document.querySelector('.produits').appendChild(newModal);
-                })
-
-            })
-
-
-
+document.querySelector('.produits').appendChild(newModal);
 
         });
     });
