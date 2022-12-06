@@ -23,18 +23,20 @@
             <a class="navbar-brand" href="#">Goodies</a>
         </div>
         <div>
-            <i class="bi bi-cart text-white mx-5" id="myInput"></i>
+            <i class="bi bi-cart text-white mx-5" id="myInput"><span id="nbPanier">0</span></i>
         </div>
     </nav>
+    <div class="banniere">
 
+    </div>
     <div class="row mx-0">
         <aside class="mx-0 col-lg-2">
             <fieldset class="my-5">
                 <legend>Maillot</legend>
 
                 <div>
-                    <input type="radio" id="maillot1" name="produit" onchange="displayTshirt()">
-                    <label for="maillot">T-shirt</label>
+                    <input type="radio" id="maillot" name="produit" onchange="displayTshirt()">
+                    <label for="maillot">Maillot</label>
                 </div>
 
                 <div>
@@ -53,19 +55,19 @@
 
                 <div>
                     <input type="radio" id="casquette" name="produit" onchange="displayCasquette()">
-                    <label for="accessoires">Casquette</label>
+                    <label for="casquette">Casquette</label>
                 </div>
                 <div>
                     <input type="radio" id="echarpe" name="produit" onchange="displayEcharpe()">
-                    <label for="accessoires">Echarpe</label>
+                    <label for="echarpe">Echarpe</label>
                 </div>
                 <div>
                     <input type="radio" id="bonnet" name="produit" onchange="displayBonnet()">
-                    <label for="accessoires">Bonnet</label>
+                    <label for="bonnet">Bonnet</label>
                 </div>
                 <div>
                     <input type="radio" id="ballon" name="produit" onchange="displayBall()">
-                    <label for="accessoires">Ballon</label>
+                    <label for="ballon">Ballon</label>
                 </div>
 
             </fieldset>
