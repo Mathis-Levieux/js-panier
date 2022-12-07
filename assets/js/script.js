@@ -41,6 +41,9 @@ fetch('items.json')
                     <div class="col-lg-6 col-12">
                         <h3 class="pb-2 fw-normal">${element.item_name}</h3>
                         <p>${element.description}</p>
+                        <p>${Number(element.price).toFixed(2)} €</p>
+                        <button class="btnAdd py-3" data-id="${element.id}">Ajouter au panier</button>
+
                     </div>
                 </div>
             </div>
