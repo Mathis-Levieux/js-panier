@@ -14,138 +14,217 @@
 </head>
 
 <body>
-
-    <nav class="navbar-dark fixed-top mx-0">
-        <img id="logo" src="assets/img/logo.png" alt="">
-        <h1 id="titre">fiers d'être bleus</h1>
-        <div id="panier">
-            <i class="bi bi-cart text-white " id="myInput"></i>
-            <span id="nbPanier">0</span>
-        </div>
-
-    </nav>
-    <div class="banniere">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-         
-    
+    <header>
+        <nav class="navbar-dark fixed-top mx-0">
+            <img id="logo" src="assets/img/logo.png" alt="">
+            <h1 id="titre">fiers d'être bleus</h1>
+            <div id="panier">
+                <i class="bi bi-cart text-white " id="myInput"></i>
+                <span id="nbPanier">0</span>
             </div>
-          </div>
 
-          
-          
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://api.prod.panini.cloud/pub/media/FFF_Merch_Noel_SLIDER_1440x500.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://api.prod.panini.cloud/pub/media/CSBlock/FFF/Slider/FFF-1440-500-slider-WC-2022-03-general_accroche.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://api.prod.panini.cloud/pub/media/FFF-1440-500-slider-OPE-BADGE-FFF-OFFERT.jpg" class="d-block w-100" alt="...">
-              </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="banniere">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            <div class="hero-link">
-                <a class="hero-link-button text-center" href="#nouveaute"
-                  ><i class="bi bi-chevron-double-down"></i
-                ></a>
-              </div>
-          </div>
-      </div>
- 
-    <div class="main-content row mx-0">
-        <aside class="mx-0 col-lg-2">
-            <fieldset class="my-5">
-                <legend>Maillots</legend>
-
-                <div>
-                    <input type="radio" id="maillot" name="produit" onchange="displayTshirt()">
-                    <label for="maillot">Maillots</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="short" name="produit" onchange="displayShort()">
-                    <label for="short">Shorts</label>
-                </div>
-                <div>
-                    <input type="radio" id="chaussettes" name="produit" onchange="displaySocks()">
-                    <label for="chaussettes">Chaussettes</label>
-                </div>
 
 
-            </fieldset>
-            <fieldset class="my-5">
-                <legend>Accessoires</legend>
 
-                <div>
-                    <input type="radio" id="casquette" name="produit" onchange="displayCasquette()">
-                    <label for="casquette">Casquettes</label>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://api.prod.panini.cloud/pub/media/FFF_Merch_Noel_SLIDER_1440x500.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://api.prod.panini.cloud/pub/media/CSBlock/FFF/Slider/FFF-1440-500-slider-WC-2022-03-general_accroche.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://api.prod.panini.cloud/pub/media/FFF-1440-500-slider-OPE-BADGE-FFF-OFFERT.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="echarpe" name="produit" onchange="displayEcharpe()">
-                    <label for="echarpe">Echarpes</label>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="hero-link">
+                    <a class="hero-link-button text-center" href="#nouveaute"><i
+                            class="bi bi-chevron-double-down"></i></a>
                 </div>
-                <div>
-                    <input type="radio" id="bonnet" name="produit" onchange="displayBonnet()">
-                    <label for="bonnet">Bonnets</label>
-                </div>
-                <div>
-                    <input type="radio" id="ballon" name="produit" onchange="displayBall()">
-                    <label for="ballon">Ballons</label>
-                </div>
-
-            </fieldset>
-            <fieldset>
-                <legend>Goodies</legend>
-                <div>
-                    <input type="radio" id="goodies" name="produit" onchange="displayGoodies()">
-                    <label for="goodies">Goodies</label>
-                </div>
-            </fieldset>
-        </aside>
-        <div class="contenu col-lg-10">
-            <h2 id="nouveaute">Nouveautés</h2>
-
-            <div class="row produits mx-0 justify-content-center">
-
-                <!-- <div class="item col-lg-2">
-        <img src="" alt="">
-        <p class="description">Maillot Equipe de France</p>
-        <p class="price">60€</p>
-        <button>Ajouter au panier</button>
-    </div> -->
-        
-        <div class="article">
-            <h2>Votre panier</h2>
-            <div class="panier-container">
-                <div class="img-article"><img src="https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/6/7/670830h.jpg" alt=""></div>
-                <div class="nom-article">Le nom de l'aricle</div><span>Taille: M</span>
-                <div class="quantite-article"><p>1</p><i class="bi bi-plus-circle"></i><i class="bi bi-dash-circle"></i></div>
-                <div class="prix-article">60€</div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                  </svg>
             </div>
         </div>
 
+        <div class="main-content row mx-0">
+            <aside class="mx-0 col-lg-2 ">
+                <fieldset class="my-5">
+                    <legend>Maillots</legend>
+
+                    <div>
+                        <input type="radio" id="maillot" name="produit" onchange="displayTshirt()">
+                        <label for="maillot">Maillots</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="short" name="produit" onchange="displayShort()">
+                        <label for="short">Shorts</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="chaussettes" name="produit" onchange="displaySocks()">
+                        <label for="chaussettes">Chaussettes</label>
+                    </div>
+
+
+                </fieldset>
+                <fieldset class="my-5">
+                    <legend>Accessoires</legend>
+
+                    <div>
+                        <input type="radio" id="casquette" name="produit" onchange="displayCasquette()">
+                        <label for="casquette">Casquettes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="echarpe" name="produit" onchange="displayEcharpe()">
+                        <label for="echarpe">Echarpes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bonnet" name="produit" onchange="displayBonnet()">
+                        <label for="bonnet">Bonnets</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ballon" name="produit" onchange="displayBall()">
+                        <label for="ballon">Ballons</label>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Goodies</legend>
+                    <div>
+                        <input type="radio" id="goodies" name="produit" onchange="displayGoodies()">
+                        <label for="goodies">Goodies</label>
+                    </div>
+                </fieldset>
+            </aside>
+
+            <div class="burger navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <div>
+                                        <input type="radio" id="maillot" name="produit" onchange="displayTshirt()">
+                                        <label for="maillot">Maillots</label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div>
+                                        <input type="radio" id="short" name="produit" onchange="displayShort()">
+                                        <label for="short">Shorts</label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div>
+                                        <input type="radio" id="chaussettes" name="produit" onchange="displaySocks()">
+                                        <label for="chaussettes">Chaussettes</label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div>
+                                        <input type="radio" id="casquette" name="produit" onchange="displayCasquette()">
+                                        <label for="casquette">Casquettes</label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div>
+                                        <input type="radio" id="echarpe" name="produit" onchange="displayEcharpe()">
+                                        <label for="echarpe">Echarpes</label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div>
+                                        <input type="radio" id="bonnet" name="produit" onchange="displayBonnet()">
+                                        <label for="bonnet">Bonnets</label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div>
+                                        <input type="radio" id="ballon" name="produit" onchange="displayBall()">
+                                        <label for="ballon">Ballons</label>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div>
+                                        <input type="radio" id="goodies" name="produit" onchange="displayGoodies()">
+                                        <label for="goodies">Goodies</label>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
             </div>
 
 
-    
+
+
+
+
+            <div class="contenu col-lg-10">
+                <h2 id="nouveaute">Nouveautés</h2>
+
+                <div class="row produits mx-0 justify-content-center">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="article">
+        <h2>Votre panier</h2>
+    </div>
+
+
 
     <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
