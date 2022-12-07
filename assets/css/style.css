@@ -82,7 +82,7 @@ h2 {
     margin: auto;
 }
 
-.produits img {
+.main-img {
     width: 100%;
     height: auto;
     border-radius: 10px 10px;
@@ -109,6 +109,10 @@ h2 {
 
 .imgzoom {
     margin-bottom: 0em !important;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px;
+    margin-bottom: 2em;
 }
 
 .btn-close {
@@ -188,6 +192,36 @@ h2 {
     border-radius: 100%;
     background: #fff;
     z-index: -1;
+}
+.panier-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2em;
+    font-size: 1.5em;
+}
+.img-article img {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+
+.quantite-article {
+    display: flex;
+    align-items: center;
+}
+.quantite-article p {
+    margin-bottom: 0;
+}
+.panier-container i {
+    margin-left: 0.5em;
+}
+.supprimer-article {
+    background-color: rgb(255, 0, 0);
+    border-radius: 1em;
+    font-size: 1em;
+
 }
 
 @media (max-width:1024px) {

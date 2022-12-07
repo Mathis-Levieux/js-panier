@@ -9,7 +9,7 @@ fetch('items.json')
 
             const newDiv = document.createElement('div');
             newDiv.innerHTML = `
-            <img type="button" src="${element.image_path}" alt="${element.item_name}" data-bs-toggle="modal"
+            <img class="main-img" type="button" src="${element.image_path}" alt="${element.item_name}" data-bs-toggle="modal"
             data-bs-target="#${element.id}">
             <p class="description">${element.item_name}</p>
             <p class="price">${Number(element.price).toFixed(2)} €</p>
