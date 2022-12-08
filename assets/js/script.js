@@ -12,12 +12,27 @@ fetch('items.json')
             <img class="main-img" type="button" src="${element.imagepath}" alt="${element.itemname}" data-bs-toggle="modal"
             data-bs-target="#${element.id}">
             <p class="description">${element.itemname}</p>
-            <p class="price">${Number(element.price).toFixed(2)} €</p>
+            <div class="d-flex"><p class="price">${Number(element.price).toFixed(2)} </p><span> €</span></div>
             <button class="btnAdd py-3" data-id= ${element.id} data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>`;
             newDiv.classList.add('item', 'col-lg-2', 'col-5', 'mx-2', 'mx-lg-2', 'fadein')
             newDiv.dataset.category = element.category
 
-            document.querySelector('.produits').appendChild(newDiv);
+
+            const newDivSize = document.createElement('div');
+            newDivSize.innerHTML = `
+            <img class="main-img" type="button" src="${element.imagepath}" alt="${element.itemname}" data-bs-toggle="modal"
+            data-bs-target="#${element.id}">
+            <p class="description">${element.itemname}</p>
+            <div class="d-flex"><p class="price">${Number(element.price).toFixed(2)} </p><span> €</span></div>
+            <button class="btnAdda py-3" data-bs-toggle="modal" data-bs-target="#${element.id}">Ajouter au panier</button>`;
+            newDivSize.classList.add('item', 'col-lg-2', 'col-5', 'mx-2', 'mx-lg-2', 'fadein')
+            newDivSize.dataset.category = element.category
+
+            if (element.category == 'maillot' || element.category == 'short') {
+                document.querySelector('.produits').appendChild(newDivSize);
+            } else {
+                document.querySelector('.produits').appendChild(newDiv);
+            }
 
 
 
@@ -41,8 +56,8 @@ fetch('items.json')
                     <div class="modal-text col-lg-6 col-12">
                         <h3 class="pb-2 fw-normal">${element.itemname}</h3>
                         <p>${element.description}</p>
-                        <p>${Number(element.price).toFixed(2)} €</p>
-                        <button class="btnAdd py-3" data-id="${element.id}">Ajouter au panier</button>
+                        <div class="d-flex"><p class="price">${Number(element.price).toFixed(2)} </p><span> €</span></div>
+                        <button class="btnAdd py-3" data-id= ${element.id} data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
                     </div>
                 </div>
             </div>
@@ -70,15 +85,15 @@ fetch('items.json')
         <div class="modal-text col-lg-6 col-12">
             <h3 class="pb-2 fw-normal">${element.itemname}</h3>
             <p>${element.description}</p>
-            <p>${Number(element.price).toFixed(2)} €</p>
+            <div class="d-flex"><p class="price">${Number(element.price).toFixed(2)} </p><span> €</span></div>
             <label for="marque">Choisissez votre taille</label>
             <select name="taille" id="taille">
               <option value="S">S</option> 
               <option value="M">M</option>
               <option value="L">L</option>
               <option value="XL">XL</option>
-            </select> <br/>
-            <button class="btnAdd py-3" data-id="${element.id}">Ajouter au panier</button>
+            </select> 
+            <button class="btnAdd py-3" data-id= ${element.id} data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
         </div>
     </div>
 </div>
@@ -190,62 +205,103 @@ function displayGoodies() {
 document.querySelector('#panier').addEventListener('click', () => {
     document.querySelector('main').style.display = 'none'
     document.querySelector('.article').style.display = 'block'
-
 })
 
-
-
-
-
-const btn = document.querySelectorAll('.btnAdd');
-btn.forEach(element => {
-    element.addEventListener('click', () => {
-        console.log('clic')
-        fetch('items.json')
-            .then(res => {
-                if (res.ok) {
-                    return res.json();
-                }
-            })
-            .then(data => {
-                console.log(data)
-            })
-    })
-})
+const quantityArray = [];
+let quantity = 0;
+let total = 0;
 window.addEventListener('click', e => {
+
     if (e.target.classList.contains('btnAdd')) {
+
+
         const newItem = document.createElement('div');
-        newItem.classList.add('panier-container','row','mx-0')
-        newItem.innerHTML =
-            `
+        newItem.classList.add('panier-container', 'row', 'mx-0')
+        if (e.target.dataset.category === 'maillot' || e.target.dataset.category === 'short') {
+            newItem.innerHTML =
+                `
             <div class="col-lg-2 col-3 py-3 img-article"><img
                src="${e.target.dataset.image}" alt="">
        </div>
-       <div class="col-lg-3 col-9 nom-article">${e.target.dataset.name}</div><span class="col-lg-2 col-3">Taille: M</span>
+       <div class="col-lg-3 col-9 nom-article">${e.target.dataset.name}</div>
+     <span class="size col-lg-2 col-3">Taille:
+     <select name="taille" id="taille">
+     <option value="#">${e.target.previousSibling.previousSibling.value}</option> 
+     <option value="S">S</option> 
+     <option value="M">M</option>
+     <option value="L">L</option>
+     <option value="XL">XL</option>
+   </select>
+     </span>
        <div class="col-lg-2 col-3 quantite-article">
-           <p>1</p><i class="bi bi-plus-circle"></i><i class="bi bi-dash-circle"></i>
+           <p>1</p><i id="plusItem" class="bi bi-plus-circle"></i><i id="minusItem" class="bi bi-dash-circle"></i>
        </div>
-       <div class="col-lg-1 col-3 prix-article">${Number(e.target.dataset.price).toFixed(2)} €</div>
+       <div class="col-lg-1 col-3 prix-article">${Number(e.target.dataset.price).toFixed(2)} </div>
        <img class="col-lg-2 col-3 delete"  src="assets/img/delete.png" alt="">
 
    `
+            document.querySelector('.article').appendChild(newItem)
 
 
-
-
-
-   document.querySelector('.article').appendChild(newItem)
-
+        } else {
+            newItem.innerHTML =
+                `
+                <div class="col-lg-2 col-3 py-3 img-article"><img
+                   src="${e.target.dataset.image}" alt="">
+           </div>
+           <div class="col-lg-3 col-9 nom-article">${e.target.dataset.name}</div>
+           <span class="size col-lg-2 col-3"></span>
+           <div class="col-lg-2 col-3 quantite-article">
+               <p class="quantite">1</p><i id="plusItem" class="bi bi-plus-circle"></i><i id="minusItem" class="bi bi-dash-circle"></i>
+           </div>
+           <div class="col-lg-1 col-3 prix-article">${Number(e.target.dataset.price).toFixed(2)}</div>
+           <img class="col-lg-2 col-3 delete"  src="assets/img/delete.png" alt="">
+    `
+            document.querySelector('.article').appendChild(newItem)
+        }
+        total += Number(e.target.dataset.price);
+        document.querySelector('.totalPrice').innerHTML = total.toFixed(2);
+        quantity++;
+        document.querySelector('#nbPanier').innerHTML = quantity
     }
 })
+
 
 document.querySelector('.article').addEventListener("click", event => {
     if (event.target.classList.contains("delete")) {
-        event.target.parentElement.remove()
+        quantity-=Number(event.target.previousSibling.previousSibling.previousSibling.previousSibling.firstChild.nextSibling.innerHTML)
+        document.querySelector('#nbPanier').innerHTML = quantity
+        total -= (Number(event.target.previousSibling.previousSibling.innerHTML))
+        document.querySelector('.totalPrice').innerHTML = total.toFixed(2);
+       event.target.parentElement.remove()
+        
+
 
     }
 })
 
-document.querySelector('#logo').addEventListener('click',()=>{
+document.querySelector('#logo').addEventListener('click', () => {
     location.reload();
+})
+
+document.querySelector('.article').addEventListener("click", event => {
+    document.querySelector('#nbPanier').innerHTML = quantity
+    
+    if (event.target.id == 'plusItem') {
+        event.target.previousSibling.innerHTML++
+        quantity++
+        document.querySelector('#nbPanier').innerHTML = quantity
+        let ref = event.target.parentElement.nextSibling.nextSibling.innerHTML  // REGLER LE BUG DES VALEURS DES OBJETS
+        let totalRef = ref * quantity;
+        event.target.parentElement.nextSibling.nextSibling.innerHTML = totalRef.toFixed(2)
+    }
+    if (event.target.id == 'minusItem') {
+        if(event.target.previousSibling.previousSibling.innerHTML == 1){
+            event.target.parentElement.parentElement.remove()
+        }
+        event.target.previousSibling.previousSibling.innerHTML--
+        quantity--
+        document.querySelector('#nbPanier').innerHTML = quantity
+        
+    }
 })
