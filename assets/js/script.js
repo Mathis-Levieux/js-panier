@@ -277,3 +277,7 @@ window.addEventListener('click', e => {
 })
 
 document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
+
+function displayCart() {
+// on en est là
+}
