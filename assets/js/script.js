@@ -88,7 +88,7 @@ fetch('items.json')
               <option value="L">L</option>
               <option value="XL">XL</option>
             </select> 
-            <button class="btnAdd py-3" data-id= ${element.id} data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category} data-quantity="1">Ajouter au panier</button>
+            <button class="btnAdd py-3" data-id= ${element.id} data-quantity="1" data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
         </div>
     </div>
 </div>
@@ -215,40 +215,47 @@ document.querySelector('#logo').addEventListener('click', () => {
 
 
 // ------------------------------------------- Fonction d'ajout au panier --------------------------------------------
-var cart = [];
-cart['Details'] = [];
-cart['Products'] = [];
+var cart = JSON.parse(localStorage.getItem('cart')) || {
+    'Details': {
+        'nbItems': 0,
+        'orderTotal': 0
+    },
+    'Products': {}
+}
 
 
 
 
-function updateCartDetails(){
+
+function updateCartDetails() {
     let qt = 0;
     let total = 0;
 
     for (const [key, element] of Object.entries(cart['Products'])) {
- 
+
         // mettre à jour la quantité globale
-        qt = Number(qt)+Number(element.quantity)
+        qt = Number(qt) + Number(element.quantity)
 
         //mettre à jour le prix global
-        total = total+(element.price*element.quantity)
+        total = total + (element.price * element.quantity)
     }
-    
+
     cart['Details']['nbItems'] = qt;
     cart['Details']['orderTotal'] = total;
 
-    
+
 }
 
 
-function addToCart(item){
+function addToCart(item) {
 
-    if(cart['Products'][item.id]){
-        cart['Products'][item.id].quantity++;
-    }
-    else {
+    // si le produit est déjà dans le panier, on incrémente sa quantité
+    if (cart['Products'].hasOwnProperty(item.id)) {
+        cart['Products'][item.id].quantity = Number(cart['Products'][item.id].quantity) + 1;
+    } else {
+        // sinon on l'ajoute au panier
         cart['Products'][item.id] = item;
+        cart['Products'][item.id].quantity = 1;
     }
 
     updateCartDetails();
@@ -263,4 +270,10 @@ window.addEventListener('click', e => {
         console.table(e.target.dataset)
         console.log(cart)
     }
+    //ajouter le tableau du produit dans le local storage (index.html)
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
+
 })
+
+document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
