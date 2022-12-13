@@ -1,3 +1,7 @@
+
+    let cart = []
+    let localTotalPrice = []
+
 fetch('items.json')
     .then(res => {
         if (res.ok) {
@@ -210,7 +214,7 @@ document.querySelector('#panier').addEventListener('click', () => {
 
 })
 
-const items = [];
+
 
 
 
@@ -259,7 +263,32 @@ window.addEventListener('click', e => {
 
    `
             document.querySelector('.article').appendChild(newItem)
+            total += Number(e.target.dataset.price);
+            document.querySelector('.totalPrice').innerHTML = (Number(total).toFixed(2));
+            quantity++;
+            document.querySelector('#nbPanier').innerHTML = quantity
 
+    
+
+
+   
+       let  items = {
+            itemId: e.target.dataset.id,
+            img: e.target.dataset.image,
+            name: e.target.dataset.name,
+            size: e.target.previousSibling.previousSibling.value,
+            price: Number(e.target.dataset.price).toFixed(2),
+            quantity:quantity,
+    
+        }
+
+        cart.push(items)
+  localTotalPrice.push(Number(items.price))
+  localStorage.setItem("prixtotal", JSON.stringify(localTotalPrice.reduce((a, b) => a + b, 0)))
+    localStorage.setItem("panier", JSON.stringify(cart));
+
+
+   
 
         } else {
             newItem.innerHTML =
@@ -276,36 +305,37 @@ window.addEventListener('click', e => {
            <img class="col-lg-2 col-3 delete"  src="assets/img/delete.png" alt="">
     `
             document.querySelector('.article').appendChild(newItem)
-        }
-        total += Number(e.target.dataset.price);
-        document.querySelector('.totalPrice').innerHTML = (Number(total).toFixed(2));
-        quantity++;
-        document.querySelector('#nbPanier').innerHTML = quantity
+            total += Number(e.target.dataset.price);
+            document.querySelector('.totalPrice').innerHTML = (Number(total).toFixed(2));
+            quantity++;
+            document.querySelector('#nbPanier').innerHTML = quantity
+
+               
+       let  items = {
+        itemId: e.target.dataset.id,
+        img: e.target.dataset.image,
+        name: e.target.dataset.name,
+        size: e.target.previousSibling.previousSibling.value,
+        price: Number(e.target.dataset.price).toFixed(2),
+        quantity: 1,
+
     }
 
-    let allItems = document.querySelectorAll('.panier-container');
-    let cart = []
-    allItems.forEach(element => {
-        console.log(element.className);
-        console.log(element.firstChild.nextElementSibling.nextElementSibling.innerHTML);
-        console.log(element.children[1].textContent);
-        console.log(element.children[2].firstChild.textContent);
-        console.log(element.children[3].textContent);       // finir le local storage
-        let item = {
-            itemId: element.className,
-            img: element.firstChild.firstChild.src,
-            name: element.children[1].textContent,
-            price: element.children[2].firstChild.textContent,
-            quantity: element.children[3].textContent
-        }
+    cart.push(items)
 
-
-        cart.push(item)
-    });
-
+    localTotalPrice.push(Number(items.price))
+    localStorage.setItem("prixtotal", JSON.stringify(localTotalPrice.reduce((a, b) => a + b, 0)))
     localStorage.setItem("panier", JSON.stringify(cart));
 
+
+        }
+     
+    }
+
+
+
 })
+
 // bouton delete
 
 document.querySelector('.article').addEventListener("click", event => {
@@ -316,8 +346,10 @@ document.querySelector('.article').addEventListener("click", event => {
         document.querySelector('.totalPrice').innerHTML = (Number(total).toFixed(2));
         event.target.parentElement.remove()
 
-
-
+        
+        
+      
+        localStorage.removeItem("panier", JSON.stringify());
     }
 })
 
@@ -331,15 +363,17 @@ document.querySelector('.article').addEventListener("click", event => {
         event.target.previousSibling.innerHTML++
         quantity++
         document.querySelector('#nbPanier').innerHTML = quantity
-        let itemPrice = event.target.dataset.price  // REGLER LE BUG DES VALEURS DES OBJETS
+        let itemPrice = event.target.dataset.price 
         let totalItemPrice = itemPrice * event.target.previousSibling.innerHTML;
         event.target.parentElement.nextSibling.nextSibling.innerHTML = totalItemPrice.toFixed(2)
         total +=Number(event.target.dataset.price)
          document.querySelector('.totalPrice').innerHTML = total.toFixed(2)
+        
     }
     if (event.target.id == 'minusItem') {
         if (event.target.previousSibling.previousSibling.innerHTML == 1) {
             event.target.parentElement.parentElement.remove()
+            
         }
         event.target.previousSibling.previousSibling.innerHTML--
         quantity--
@@ -350,9 +384,66 @@ document.querySelector('.article').addEventListener("click", event => {
         total -=Number(event.target.dataset.price)
         document.querySelector('.totalPrice').innerHTML = total.toFixed(2)
 
-
+       
     }
 })
 
 
+
+
+let local = JSON.parse(localStorage.getItem('panier'));
+local.forEach(element => {
+    if (element.size){
+    const newItem = document.createElement('div');
+    newItem.classList.add('panier-container', 'row', 'mx-0')
+ 
+        newItem.innerHTML =
+            `
+        <div class="col-lg-2 col-3 py-3 img-article"><img
+           src="${element.img}" alt="">
+   </div>
+   <div class="col-lg-3 col-9 nom-article" data-id="${element.itemId}">${element.name}</div>
+ <span class="size col-lg-2 col-3">Taille:
+ <select name="taille" id="taille">
+ <option value="#">${element.size}</option> 
+ <option value="S">S</option> 
+ <option value="M">M</option>
+ <option value="L">L</option>
+ <option value="XL">XL</option>
+</select>
+ </span>
+   <div class="col-lg-2 col-3 quantite-article">
+       <p>${Number(element.quantity)}</p><i id="plusItem" class="bi bi-plus-circle" data-price=""></i><i id="minusItem" class="bi bi-dash-circle" data-price=""></i>
+   </div>
+   <div class="col-lg-1 col-3 prix-article">${Number(element.price).toFixed(2)} </div>
+   <img class="col-lg-2 col-3 delete"  src="assets/img/delete.png" alt="">
+
+`
+cart.push(element)
+document.querySelector('.article').appendChild(newItem)
+    }else{
+        const newItem = document.createElement('div');
+        newItem.classList.add('panier-container', 'row', 'mx-0')
+        newItem.innerHTML =
+        `
+        <div class="col-lg-2 col-3 py-3 img-article"><img
+           src="${element.img}" alt="">
+   </div>
+   <div class="col-lg-3 col-9 nom-article" data-id="${element.itemId}">${element.name}</div>
+   <span class="size col-lg-2 col-3"></span>
+   <div class="col-lg-2 col-3 quantite-article">
+       <p class="quantite">${Number(element.quantity)}</p><i id="plusItem" class="bi bi-plus-circle"  data-price="${Number(element.price).toFixed(2)}"></i><i id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
+   </div>
+   <div class="col-lg-1 col-3 prix-article">${Number(element.price).toFixed(2)}</div>
+   <img class="col-lg-2 col-3 delete"  src="assets/img/delete.png" alt="">
+`
+    document.querySelector('.article').appendChild(newItem)
+    cart.push(element)
+    }
+  
+})
+
+let localPrice = JSON.parse(localStorage.getItem('prixtotal'));
+
+document.querySelector('.totalPrice').innerHTML = localPrice.toFixed(2)
 
