@@ -1,3 +1,6 @@
+// const items = []
+
+
 fetch('items.json')
     .then(res => {
         if (res.ok) {
@@ -103,6 +106,16 @@ fetch('items.json')
         });
     });
 
+
+// ------------------------------------------- Création du local storage --------------------------------------------
+var cart = JSON.parse(localStorage.getItem('cart')) || {
+    'Details': {
+        'nbItems': 0,
+        'orderTotal': 0
+    },
+    'Products': {}
+}
+addToLocalStorage()
 
 
 // ------------------------------ FONCTIONS DE TRI DES OBJETS ----------------------------------------
@@ -210,18 +223,9 @@ document.querySelector('#panier').addEventListener('click', () => {
 // ------------------------------------------Bouton page d'accueil ---------------------------------------
 
 document.querySelector('#logo').addEventListener('click', () => {
-    location.reload();
+    document.querySelector('main').style.display = 'block'
+    document.querySelector('.article').style.display = 'none'
 })
-
-
-// ------------------------------------------- Fonction d'ajout au panier --------------------------------------------
-var cart = JSON.parse(localStorage.getItem('cart')) || {
-    'Details': {
-        'nbItems': 0,
-        'orderTotal': 0
-    },
-    'Products': {}
-}
 
 
 
@@ -243,41 +247,88 @@ function updateCartDetails() {
     cart['Details']['nbItems'] = qt;
     cart['Details']['orderTotal'] = total;
 
-
 }
 
 
 function addToCart(item) {
+    let key = item.id;
+
+    // si T-shirt
+    // key = key + item.size
+
 
     // si le produit est déjà dans le panier, on incrémente sa quantité
     if (cart['Products'].hasOwnProperty(item.id)) {
-        cart['Products'][item.id].quantity = Number(cart['Products'][item.id].quantity) + 1;
+        cart['Products'][key].quantity = Number(cart['Products'][key].quantity) + 1;
     } else {
         // sinon on l'ajoute au panier
-        cart['Products'][item.id] = item;
-        cart['Products'][item.id].quantity = 1;
+        cart['Products'][key] = item;
+        cart['Products'][key].quantity = 1;
+        // items.push(item)
     }
-
+   
     updateCartDetails();
-
+    addToLocalStorage()
 }
 
+
+function addToLocalStorage() {
+        localStorage.setItem('cart', JSON.stringify(cart));
+        document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
+}
+
+// Bouton ajouter au panier
 
 window.addEventListener('click', e => {
 
     if (e.target.classList.contains('btnAdd')) {
-        addToCart(e.target.dataset);
-        console.table(e.target.dataset)
-        console.log(cart)
-    }
-    //ajouter le tableau du produit dans le local storage (index.html)
-    localStorage.setItem('cart', JSON.stringify(cart));
-    document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
+        // si T-shirt
+        // e.target.dataset.size = valeur du champ taille
 
+        addToCart(e.target.dataset);
+    }
+
+   
 })
 
-document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
+document.querySelector('#panier').addEventListener('click', displayCart)
 
-function displayCart() {
-// on en est là
+
+
+// -------------------------------- Fonction pour afficher les articles du panier -----------------------
+function displayCart() { // FAIRE UNE FONCtiON VIDER LE PANIER
+    const cart = JSON.parse(localStorage.getItem('cart'))
+    console.log(cart)
+    for (const [key, element] of Object.entries(cart['Products'])){
+    
+    
+
+        const newItem = document.createElement('div');
+        newItem.classList.add('panier-container', 'row', 'mx-0')
+        if (element.category === 'maillot' || element.category === 'short') {
+            newItem.innerHTML =
+                `
+            <div class="col-lg-2 col-3 py-3 img-article"><img
+               src="${element.image}" alt="">
+       </div>
+       <div class="col-lg-3 col-9 nom-article" data-id="${element.id}">${element.name}</div>
+     <span class="size col-lg-2 col-3">Taille:
+     <select name="taille" id="taille">
+     <option value="#"></option> 
+     <option value="S">S</option> 
+     <option value="M">M</option>
+     <option value="L">L</option>
+     <option value="XL">XL</option>
+   </select>
+     </span>
+       <div class="col-lg-2 col-3 quantite-article">
+           <p>1</p><i id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
+       </div>
+       <div class="col-lg-1 col-3 prix-article">${Number(element.price).toFixed(2)} </div>
+       <img class="col-lg-2 col-3 delete"  src="assets/img/delete.png" alt="">
+   `
+            document.querySelector('.article').appendChild(newItem)
+        }
+
+    }
 }

@@ -257,6 +257,23 @@ h2 {
 .burger {
     display: none;
 }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    height: 4em;
+    background-color: #0C3153;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+    transition: 2s;
+}
 
 @media (max-width:1024px) {
 
