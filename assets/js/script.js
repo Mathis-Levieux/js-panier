@@ -330,7 +330,7 @@ function displayCart() {
    </select>
      </span>
        <div class="col-lg-2 col-3 quantite-article">
-           <p>${element.quantity}</p><i id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
+           <p>${element.quantity}</p><i data-id="${element.id}" id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i data-id="${element.id}" id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
        </div>
        <div class="col-lg-1 col-3 prix-article">${Number(element.quantity * element.price).toFixed(2)} €</div>
        <img class="col-lg-2 col-3 delete"  data-id="${element.id}" src="assets/img/delete.png" alt="">
@@ -340,7 +340,7 @@ function displayCart() {
 
         else {
             newItem.innerHTML =
-            `
+                `
             <div class="col-lg-2 col-3 py-3 img-article"><img
                src="${element.image}" alt="">
        </div>
@@ -348,7 +348,7 @@ function displayCart() {
      <span class="size col-lg-2 col-3">
      </span>
        <div class="col-lg-2 col-3 quantite-article">
-           <p>${element.quantity}</p><i id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
+           <p>${element.quantity}</p><i data-id="${element.id}" id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i data-id="${element.id}" id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
        </div>
        <div class="col-lg-1 col-3 prix-article">${Number(element.quantity * element.price).toFixed(2)} €</div>
        <img class="col-lg-2 col-3 delete"  data-id="${element.id}" src="assets/img/delete.png" alt="">
@@ -361,19 +361,53 @@ function displayCart() {
 // -------- Fonction qui permet de supprimer un objet du panier -----------
 
 document.querySelector('.article').addEventListener("click", event => {
-if (event.target.classList.contains("delete")) {
-    deleteItem(event.target.dataset.id)
-    event.target.parentElement.style.display = "none"
-}
+    if (event.target.classList.contains("delete")) {
+        deleteItem(event.target.dataset.id)
+        event.target.parentElement.style.display = "none"
+    }
 })
 
 function deleteItem(item) {
 
-delete cart.Products[item]
+    delete cart.Products[item]
 
-updateCartDetails()
- addToLocalStorage()
- document.querySelector('.totalPrice').innerHTML = `Total: ${JSON.parse(localStorage.getItem('cart')).Details.orderTotal.toFixed(2)}`
+    updateCartDetails()
+    addToLocalStorage()
+    document.querySelector('.totalPrice').innerHTML = `Total: ${JSON.parse(localStorage.getItem('cart')).Details.orderTotal.toFixed(2)}`
 
+}
+
+// ---------------- FONCTION AJOUTER ET RETIRER 1 DE LA QUANTITE ---------------------
+
+document.querySelector('.article').addEventListener("click", event => {
+    if (event.target.classList.contains('bi-plus-circle')) {
+        plusItem(event.target.dataset.id)
+    } else if (event.target.classList.contains('bi-dash-circle')) {
+        minusItem(event.target.dataset.id)
+    }
+})
+
+function plusItem(item) {
+    cart.Products[item].quantity++
+    updateCartDetails()
+    addToLocalStorage()
+    deleteCart()
+    displayCart()
+}
+
+function minusItem(item) {
+    if (cart.Products[item].quantity == 1) {
+        deleteItem(item)
+        updateCartDetails()
+        addToLocalStorage()
+        deleteCart()
+        displayCart()
+    } else {
+        cart.Products[item].quantity--
+        updateCartDetails()
+        addToLocalStorage()
+        deleteCart()
+        displayCart()
+    }
 
 }
