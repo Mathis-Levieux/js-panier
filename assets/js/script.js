@@ -266,15 +266,15 @@ function addToCart(item) {
         cart['Products'][key].quantity = 1;
         // items.push(item)
     }
-   
+
     updateCartDetails();
     addToLocalStorage()
 }
 
 
 function addToLocalStorage() {
-        localStorage.setItem('cart', JSON.stringify(cart));
-        document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
 }
 
 // Bouton ajouter au panier
@@ -288,20 +288,28 @@ window.addEventListener('click', e => {
         addToCart(e.target.dataset);
     }
 
-   
+
 })
 
-document.querySelector('#panier').addEventListener('click', displayCart)
 
-
+document.querySelector('#panier').addEventListener('click', () => {
+    deleteCart()
+    displayCart()
+})
+// ------------------ FONCTION POUR SUPPRIMER LES DIVS DU PANIER AVANT DE LES REAFFICHER POUR EVITER LES DOUBLONS ---------------------
+function deleteCart() {
+    document.querySelectorAll('.panier-container').forEach(element => element.remove())
+}
 
 // -------------------------------- Fonction pour afficher les articles du panier -----------------------
-function displayCart() { // FAIRE UNE FONCtiON VIDER LE PANIER
+function displayCart() {
     const cart = JSON.parse(localStorage.getItem('cart'))
-    console.log(cart)
-    for (const [key, element] of Object.entries(cart['Products'])){
-    
-    
+
+    document.querySelector('.totalPrice').innerHTML = `Total: ${JSON.parse(localStorage.getItem('cart')).Details.orderTotal.toFixed(2)}`
+
+    for (const [key, element] of Object.entries(cart['Products'])) {
+
+
 
         const newItem = document.createElement('div');
         newItem.classList.add('panier-container', 'row', 'mx-0')
@@ -314,7 +322,7 @@ function displayCart() { // FAIRE UNE FONCtiON VIDER LE PANIER
        <div class="col-lg-3 col-9 nom-article" data-id="${element.id}">${element.name}</div>
      <span class="size col-lg-2 col-3">Taille:
      <select name="taille" id="taille">
-     <option value="#"></option> 
+     <option value="#"></option> s
      <option value="S">S</option> 
      <option value="M">M</option>
      <option value="L">L</option>
@@ -322,13 +330,50 @@ function displayCart() { // FAIRE UNE FONCtiON VIDER LE PANIER
    </select>
      </span>
        <div class="col-lg-2 col-3 quantite-article">
-           <p>1</p><i id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
+           <p>${element.quantity}</p><i id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
        </div>
-       <div class="col-lg-1 col-3 prix-article">${Number(element.price).toFixed(2)} </div>
-       <img class="col-lg-2 col-3 delete"  src="assets/img/delete.png" alt="">
+       <div class="col-lg-1 col-3 prix-article">${Number(element.quantity * element.price).toFixed(2)} €</div>
+       <img class="col-lg-2 col-3 delete"  data-id="${element.id}" src="assets/img/delete.png" alt="">
    `
             document.querySelector('.article').appendChild(newItem)
         }
 
+        else {
+            newItem.innerHTML =
+            `
+            <div class="col-lg-2 col-3 py-3 img-article"><img
+               src="${element.image}" alt="">
+       </div>
+       <div class="col-lg-3 col-9 nom-article" data-id="${element.id}">${element.name}</div>
+     <span class="size col-lg-2 col-3">
+     </span>
+       <div class="col-lg-2 col-3 quantite-article">
+           <p>${element.quantity}</p><i id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
+       </div>
+       <div class="col-lg-1 col-3 prix-article">${Number(element.quantity * element.price).toFixed(2)} €</div>
+       <img class="col-lg-2 col-3 delete"  data-id="${element.id}" src="assets/img/delete.png" alt="">
+   `
+            document.querySelector('.article').appendChild(newItem)
+        }
     }
+}
+
+// -------- Fonction qui permet de supprimer un objet du panier -----------
+
+document.querySelector('.article').addEventListener("click", event => {
+if (event.target.classList.contains("delete")) {
+    deleteItem(event.target.dataset.id)
+    event.target.parentElement.style.display = "none"
+}
+})
+
+function deleteItem(item) {
+
+delete cart.Products[item]
+
+updateCartDetails()
+ addToLocalStorage()
+ document.querySelector('.totalPrice').innerHTML = `Total: ${JSON.parse(localStorage.getItem('cart')).Details.orderTotal.toFixed(2)}`
+
+
 }

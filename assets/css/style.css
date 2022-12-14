@@ -3,9 +3,13 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+html,body{
+    height: 100%;
+}
 body {
     overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
 }
 #titre {
     color: white;
@@ -258,12 +262,13 @@ h2 {
     display: none;
 }
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
-    height: 4em;
-    background-color: #0C3153;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: #0C3153;
+        margin-top: auto;
+
 }
 footer a {
     text-decoration: none;
