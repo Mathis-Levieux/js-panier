@@ -58,7 +58,7 @@ fetch('items.json')
                         <h3 class="pb-2 fw-normal">${element.itemname}</h3>
                         <p>${element.description}</p>
                         <div class="d-flex"><p class="price">${Number(element.price).toFixed(2)} </p><span> €</span></div>
-                        <button class="btnAdd py-3" data-id= ${element.id} data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
+                        <button class="btnAdd py-3" data-id=${element.id} data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ fetch('items.json')
               <option value="L">L</option>
               <option value="XL">XL</option>
             </select> 
-            <button class="btnAdd py-3" data-size="" data-id= ${element.id} data-quantity="1" data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
+            <button class="btnAdd py-3" data-size="" data-id="${element.id}" data-quantity="1" data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
         </div>
     </div>
 </div>
@@ -290,6 +290,7 @@ window.addEventListener('click', e => {
         // e.target.dataset.size = valeur du champ taille
         e.target.dataset.size = e.target.previousSibling.previousSibling.value
         }
+
         addToCart(e.target.dataset);
     }
 
