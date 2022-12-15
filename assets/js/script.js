@@ -91,7 +91,7 @@ fetch('items.json')
               <option value="L">L</option>
               <option value="XL">XL</option>
             </select> 
-            <button class="btnAdd py-3" data-id= ${element.id} data-quantity="1" data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
+            <button class="btnAdd py-3" data-size="" data-id= ${element.id} data-quantity="1" data-price=${element.price} data-name="${element.itemname}" data-image=${element.imagepath} data-category=${element.category}>Ajouter au panier</button>
         </div>
     </div>
 </div>
@@ -254,12 +254,15 @@ function addToCart(item) {
     let key = item.id;
 
     // si T-shirt
-    // key = key + item.size
-
+    if (item.category == "maillot" || item.category == "short") {
+         // key = key + item.size
+         key = `${key}_${item.size}`
+    }
 
     // si le produit est déjà dans le panier, on incrémente sa quantité
-    if (cart['Products'].hasOwnProperty(item.id)) {
+    if (cart['Products'].hasOwnProperty(key)) {
         cart['Products'][key].quantity = Number(cart['Products'][key].quantity) + 1;
+        console.log("doublon")
     } else {
         // sinon on l'ajoute au panier
         cart['Products'][key] = item;
@@ -283,8 +286,10 @@ window.addEventListener('click', e => {
 
     if (e.target.classList.contains('btnAdd')) {
         // si T-shirt
+        if (e.target.dataset.category == "maillot" || e.target.dataset.category == "short") {
         // e.target.dataset.size = valeur du champ taille
-
+        e.target.dataset.size = e.target.previousSibling.previousSibling.value
+        }
         addToCart(e.target.dataset);
     }
 
