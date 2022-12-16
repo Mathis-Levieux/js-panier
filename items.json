@@ -60,7 +60,13 @@
             "description": "Maillot Match Nike France Domicile 2022/2023, coloris Bleu.\nTissu ultra-respirant.\nConfortable.\nMouvements naturels.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311660j.jpg",
             "price": 140.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item102",
@@ -68,7 +74,13 @@
             "description": "Maillot Manches Longues Nike France Domicile 2022/2023, coloris Bleu.\nTissu respirant.\nConfortable.\nMouvements naturels.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311680j.jpg",
             "price": 100.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item103",
@@ -76,7 +88,13 @@
             "description": "Maillot Match Nike France Domicile 2022/2023, coloris Bleu.\nTissu ultra-respirant.\nConfortable.\nMouvements naturels.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/310172j.jpg",
             "price": 90.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item104",
@@ -84,7 +102,13 @@
             "description": "Maillot Match Nike France Extérieur 2022/2023, coloris Blanc.\nTissu ultra-respirant.\nConfortable.\nMouvements naturels.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311650j.jpg",
             "price": 140.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item105",
@@ -92,7 +116,13 @@
             "description": "Maillot Nike France Extérieur 2022/2023, coloris Blanc.\nCoupe standard pour une tenue décontractée.\nConfortable.\nMouvements naturels.\nTissu respirant.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311630j.jpg",
             "price": 90.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item106",
@@ -100,7 +130,13 @@
             "description": "Maillot Match Nike France Extérieur 2022/2023, coloris Blanc, Femme.\nTissu respirant.\nConfortable.\nMouvements naturels.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/310162j.jpg",
             "price": 90.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item107",
@@ -108,7 +144,13 @@
             "description": "Mini Kit Nike France Domicile 2022/2023, coloris Bleu, Blanc et Rouge, Junior.\nMaillot + Short + Chaussettes.\nTissu respirant.\nConfortable.\nMouvements naturels.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/2/4/240361j.jpg",
             "price": 65.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item108",
@@ -116,7 +158,13 @@
             "description": "Mini Kit Nike France Extérieur 2022/2023, coloris Blanc et Bleu, Junior.\nMaillot + Short + Chaussettes.\nConfortable.\nTissu respirant.\nMouvements naturels.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/2/4/240351j.jpg",
             "price": 65.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item109",
@@ -124,7 +172,13 @@
             "description": "Maillot Manches Longues Nike France Gardien 2022/2023, coloris Jaune.\nTissu respirant.\nConfortable.\nMouvements naturels.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/1/311670j.jpg",
             "price": 100.00,
-            "category": "maillot"
+            "category": "maillot",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item201",
@@ -132,7 +186,13 @@
             "description": "Short Nike France Domicile 2022/2023, coloris Blanc.\nTissu respirant.\nConfortable.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320800j_2_3.jpg",
             "price": 40.00,
-            "category": "short"
+            "category": "short",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item202",
@@ -140,7 +200,13 @@
             "description": "Short Nike France Extérieur 2022/2023, coloris Blanc, Junior.\nTissu respirant.\nConfortable.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320461j_1.jpg",
             "price": 28.75,
-            "category": "short"
+            "category": "short",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item203",
@@ -148,7 +214,13 @@
             "description": "Short Nike France Domicile 2022/2023, coloris Blanc, Femme.\nTissu respirant.\nConfortable.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320052j_short_1.jpg",
             "price": 40.00,
-            "category": "short"
+            "category": "short",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item204",
@@ -156,7 +228,13 @@
             "description": "Short Nike France Extérieur 2022/2023, coloris Bleu.\nTissu respirant.\nConfortable.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320790j_6.jpg",
             "price": 40.00,
-            "category": "short"
+            "category": "short",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item205",
@@ -164,7 +242,13 @@
             "description": "Short entraînement Nike France Strike, coloris Bleu.\nTissu respirant et aéré.\nRangements sécurisés.\nConfortable.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/5/3/530360j_7.jpg",
             "price": 35.00,
-            "category": "short"
+            "category": "short",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item206",
@@ -172,7 +256,13 @@
             "description": "Short de bain France Fan, coloris Bleu.\nProduit sous licence officielle.\nConfortable.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320010j.jpg",
             "price": 25.00,
-            "category": "short"
+            "category": "short",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item207",
@@ -180,7 +270,13 @@
             "description": "Short Nike France Woven, coloris Bleu et Rouge.\nRangements sécurisés.\nAjustement idéal.\nConfortable.",
             "imagepath": "https://api.prod.panini.cloud/pub/media/catalog/product/resized/1200/3/2/320130g.jpg",
             "price": 35.00,
-            "category": "short"
+            "category": "short",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ]
         },
         {
             "id": "item301",
@@ -448,5 +544,3 @@
         }
     ]
 }
-
-

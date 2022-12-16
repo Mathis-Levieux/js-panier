@@ -258,19 +258,20 @@ function addToCart(item) {
          // key = key + item.size
          key = `${key}_${item.size}`
     }
-
+    console.log(key)
     // si le produit est déjà dans le panier, on incrémente sa quantité
-    if (cart['Products'].hasOwnProperty(key)) {
+    if (cart['Products'][key]) {
         cart['Products'][key].quantity = Number(cart['Products'][key].quantity) + 1;
-        console.log("doublon")
-    } else {
+    } else  {
         // sinon on l'ajoute au panier
+
         cart['Products'][key] = item;
         cart['Products'][key].quantity = 1;
         // items.push(item)
     }
 
     updateCartDetails();
+    console.log(cart)
     addToLocalStorage()
 }
 
@@ -288,10 +289,13 @@ window.addEventListener('click', e => {
         // si T-shirt
         if (e.target.dataset.category == "maillot" || e.target.dataset.category == "short") {
         // e.target.dataset.size = valeur du champ taille
+        
         e.target.dataset.size = e.target.previousSibling.previousSibling.value
-        }
-
-        addToCart(e.target.dataset);
+        
+            console.table(e.target.dataset)
+        } 
+let data = e.target.dataset
+        addToCart(data);
     }
 
 
@@ -328,7 +332,7 @@ function displayCart() {
        <div class="col-lg-3 col-9 nom-article" data-id="${element.id}">${element.name}</div>
      <span class="size col-lg-2 col-3">Taille:
      <select name="taille" id="taille">
-     <option value="#"></option> s
+     <option value="#"></option> 
      <option value="S">S</option> 
      <option value="M">M</option>
      <option value="L">L</option>
@@ -336,7 +340,8 @@ function displayCart() {
    </select>
      </span>
        <div class="col-lg-2 col-3 quantite-article">
-           <p>${element.quantity}</p><i data-id="${element.id}" id="plusItem" class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i data-id="${element.id}" id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
+           <p>${element.quantity}</p><i data-id="${element.id}" id="
+           " class="bi bi-plus-circle" data-price="${Number(element.price).toFixed(2)}"></i><i data-id="${element.id}" id="minusItem" class="bi bi-dash-circle" data-price="${Number(element.price).toFixed(2)}"></i>
        </div>
        <div class="col-lg-1 col-3 prix-article">${Number(element.quantity * element.price).toFixed(2)} €</div>
        <img class="col-lg-2 col-3 delete"  data-id="${element.id}" src="assets/img/delete.png" alt="">
