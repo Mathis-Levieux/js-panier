@@ -223,12 +223,8 @@ document.querySelector('#panier').addEventListener('click', () => {
 // ------------------------------------------Bouton page d'accueil ---------------------------------------
 
 document.querySelector('#logo').addEventListener('click', () => {
-    document.querySelector('main').style.display = 'block'
-    document.querySelector('.article').style.display = 'none'
+    location.reload()
 })
-
-
-
 
 
 function updateCartDetails() {
@@ -252,30 +248,25 @@ function updateCartDetails() {
 
 function addToCart(item) {
     let key = item.id;
-
     // si T-shirt
-    if (item.category == "maillot" || item.category == "short") {
-         // key = key + item.size
-         key = `${key}_${item.size}`
-    }
-    console.log(key)
+    // if (item.category == "maillot" || item.category == "short") {
+    //      // key = key + item.size
+    //      key = `${key}_${item.size}`
+    // }
     // si le produit est déjà dans le panier, on incrémente sa quantité
     if (cart['Products'][key]) {
         cart['Products'][key].quantity = Number(cart['Products'][key].quantity) + 1;
-    } else  {
+    } else {
         // sinon on l'ajoute au panier
-
         cart['Products'][key] = item;
         cart['Products'][key].quantity = 1;
-        // items.push(item)
     }
 
     updateCartDetails();
-    console.log(cart)
     addToLocalStorage()
 }
 
-
+// Fonction qui ajoute notre tableau au local storage et qui affiche le nombre d'objet dans le panier
 function addToLocalStorage() {
     localStorage.setItem('cart', JSON.stringify(cart));
     document.querySelector('#nbPanier').innerText = JSON.parse(localStorage.getItem('cart')).Details.nbItems;
@@ -288,25 +279,21 @@ window.addEventListener('click', e => {
     if (e.target.classList.contains('btnAdd')) {
         // si T-shirt
         if (e.target.dataset.category == "maillot" || e.target.dataset.category == "short") {
-        // e.target.dataset.size = valeur du champ taille
-        
-        e.target.dataset.size = e.target.previousSibling.previousSibling.value
-        
-            console.table(e.target.dataset)
-        } 
-let data = e.target.dataset
+            // e.target.dataset.size = valeur du champ taille
+            e.target.dataset.size = e.target.previousSibling.previousSibling.value
+        }
+        let data = e.target.dataset
         addToCart(data);
+        newItemPopUpDisplay()
     }
-
-
 })
 
-
+// ---------------------------------- Au clic du panier, affiche les articles dans le panier en renouvellant le panier ------------------------
 document.querySelector('#panier').addEventListener('click', () => {
     deleteCart()
     displayCart()
 })
-// ------------------ FONCTION POUR SUPPRIMER LES DIVS DU PANIER AVANT DE LES REAFFICHER POUR EVITER LES DOUBLONS ---------------------
+// ------------------ FONCTION POUR SUPPRIMER LES DIVS DU PANIER ---------------------
 function deleteCart() {
     document.querySelectorAll('.panier-container').forEach(element => element.remove())
 }
@@ -331,13 +318,7 @@ function displayCart() {
        </div>
        <div class="col-lg-3 col-9 nom-article" data-id="${element.id}">${element.name}</div>
      <span class="size col-lg-2 col-3">Taille:
-     <select name="taille" id="taille">
-     <option value="#"></option> 
-     <option value="S">S</option> 
-     <option value="M">M</option>
-     <option value="L">L</option>
-     <option value="XL">XL</option>
-   </select>
+     ${element.size}
      </span>
        <div class="col-lg-2 col-3 quantite-article">
            <p>${element.quantity}</p><i data-id="${element.id}" id="
@@ -421,4 +402,16 @@ function minusItem(item) {
         displayCart()
     }
 
+}
+
+// Fonction pour afficher un popup à chaque ajout au panier
+
+const newItemPopUp = document.querySelector('.newitempopup')
+
+function newItemPopUpDisplay() {
+    newItemPopUp.style.display = "flex"
+    setTimeout(newItemPopUpRemove, 1500)
+}
+function newItemPopUpRemove() {
+    newItemPopUp.style.display = "none"
 }
